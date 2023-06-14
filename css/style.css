@@ -39,9 +39,9 @@ body {
 }
 
 .item:nth-child(even):after {
-  background-image: url("/images/icon/open.svg");
+  background-image: url("../images/icon/open.svg");
 }
 
 .item:nth-child(odd):after {
-  background-image: url("/images/icon/open-purple.svg");
+  background-image: url("../images/icon/open-purple.svg");
 }
