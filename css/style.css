@@ -3,8 +3,9 @@
 }
 
 body {
-  background-color: #1B1A1B;
-  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  background-color: #1b1a1b;
+  color: #ffffff;
 }
 
 .wrapper {
@@ -13,6 +14,12 @@ body {
   margin: 0 auto;
 }
 
-.blockquote {
-  text-transform: uppercase;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.faq {
+  margin-bottom: 100px;
 }
