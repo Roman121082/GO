@@ -1,41 +1,35 @@
-header {
+.game-over {
   padding-top: 146px;
   margin-bottom: 100px;
 }
 
-.header-img {
-  background-image: url("../images/hall/prev.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 762px;
-  background-position: right bottom;
-}
-
 .go-title {
-  margin: 0 0 -145px 0;
+  margin: 0;
   font-size: 150px;
-  font-weight: 900;
   line-height: 100%;
+  font-family: "Arial-Black", sans-serif;
+  font-weight: 900;
   letter-spacing: -15px;
 }
 
-.go-title span {
-  display: block;
+.go-subtitle {
+  margin: 0;
   font-size: 28px;
   line-height: 50px;
   letter-spacing: 0;
   padding-left: 100px;
-}
-
-.hall-section {
-  height: 710px;
-  margin-bottom: 60px;
+  background-image: url("../images/hall/prev.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-bottom: 752px;
+  background-position: right;
 }
 
 .hall-title {
   margin: 0 0 60px 0;
   text-align: center;
   font-size: 40px;
+  font-family: "Arial-Bold", sans-serif;
   font-weight: 700;
   line-height: 50px;
   text-transform: uppercase;
@@ -43,29 +37,73 @@ header {
 
 .hall-section__title {
   margin: 0 auto;
+  padding: auto 0;
   padding-top: 275px;
   max-width: 252px;
   text-align: center;
   font-size: 70px;
+  font-family: "Arial-Bold", sans-serif;
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
 }
 
-.hall-section__vibes {
+.hall {
+  margin-bottom: 100px;
+}
+
+.hall-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 70px;
+  font-family: "Arial-Bold", sans-serif;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hall-link {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.vibes {
   background-image: url("../images/hall/vibes.jpg");
+  padding: 275px 0;
+  white-space: pre-line;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
 }
 
-.hall-section__starwars {
+.starwars {
   background-image: url("../images/hall/star-wars.jpg");
+  padding: 275px 0;
+  white-space: pre-line;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
 }
 
-.hall-section__wildwest {
+.wildwest {
   background-image: url("../images/hall/wild-west.jpg");
+  padding: 275px 0;
+  white-space: pre-line;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
 }
 
-.hall-section__neon {
+.neon {
   background-image: url("../images/hall/neon-style.jpg");
+  padding: 275px 0;
+  white-space: pre-line;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .booking {
@@ -79,120 +117,105 @@ header {
   margin-bottom: 100px;
 }
 
-.about-blockquote {
+.about {
+  margin-bottom: 78px;
+}
+
+.about-text {
+  margin: 0 0 30px;
+}
+
+.about-twotext {
+  margin: 0 0 78px;
+}
+
+.blockquote {
+  margin: 0;
+  font-style: normal;
+}
+
+.blockquote-text {
   text-decoration: none;
   font-size: 44px;
   font-weight: 400;
   line-height: 50px;
   text-transform: uppercase;
+  margin-bottom: 40px;
+  white-space: pre-line;
+  margin: 0 0 40px 0;
+}
+
+.author-text {
   margin: 0;
+  line-height: 28px;
+  white-space: pre-line;
+  max-width: 360px;
+  margin-left: auto;
 }
 
-.blockquote-author {
-  margin: 0 0 0 auto;
-  max-width: 450px;
-}
-
-.blockquote-img {
+.author-text::before {
+  content: "";
   float: left;
   width: 80px;
   height: 80px;
   margin-right: 30px;
   border-radius: 50%;
-  background-image: url("../images/boss.jpeg");
+  background-image: url('../images/boss.jpeg');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.about-text p {
-  margin: 0 0 30px 0;
-}
-
-.about-text p:last-child {
-  margin-bottom: 90px;
-}
-
-.about-blockquote p {
-  margin: 0 0 40px 0;
-}
-
-.blockquote-text {
-  display: inline-block;
-  width: 250px;
-}
-
-.blockquote-text p {
-  text-transform: none;
-  font-size: 20px;
-  line-height: 28px;
-  margin: 0;
-}
-
-.hall-address {
-  margin-bottom: 38px;
-}
-
-.address-img {
-  vertical-align: super;
-  width: 32px;
-  height: 32px;
-  margin-right: 30px;
-}
-
 .address-text {
-  display: inline-block;
-  max-width: 300px;
-  font-size: 24px;
-  font-weight: 700;
+  padding-left: 62px;
+  margin: 0 0 38px;
   line-height: 28px;
-}
-
-.hall-phone {
-  margin-bottom: 11px;
-}
-
-.phone-img {
-  float: left;
-  width: 32px;
-  height: 32px;
-  margin-right: 30px;
+  white-space: pre-line;
+  background-image: url('../images/icon/location.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
 }
 
 .phone-text {
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
+  padding-left: 62px;
+  margin: 0 0 11px;
+  background-image: url('../images/icon/phone.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
 }
 
-.phone-text a {
+.mail-text {
+  margin: 0;
+  padding-left: 62px;
+  background-image: url('../images/icon/mail.svg');
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.address-link {
   text-decoration: none;
   color: inherit;
 }
 
-.mail-img {
-  float: left;
-  width: 32px;
-  height: 32px;
-  margin-right: 30px;
-}
-.mail-text {
-  display: inline-block;
-  max-width: 300px;
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 39px;
-  line-height: 32px;
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
 }
 
-.footer-social img {
+.social-item {
   margin-right: 26px;
+  display: inline-block;
+  height: 50px;
 }
 
-.footer-social img:last-child {
-  margin-right: 0;
+.social-item:last-child {
+  margin: 0;
 }
 
-footer {
-  margin-bottom: 50px;
+.social-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
 }
