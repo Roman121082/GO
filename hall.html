@@ -8,9 +8,10 @@
   <link rel="preload" href="fonts/Arial-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Arial-Black.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/hall.css" rel="stylesheet">
   <link href="css/faq.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>hall</title>
 
 
@@ -40,16 +41,18 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <main>
+
+  <main>
+    <div class="container">
       <section class="game-over">
         <h1 class="go-title" lang="en">
           GAME OVER
         </h1>
         <p class="go-subtitle">Новый формат игр и отдыха</p>
       </section>
-
-      <section class="hall">
+    </div>
+    <section class="hall">
+      <div class="container">
         <h2 class="hall-title">наши залы</h2>
         <ul class="hall-list">
           <li class="vibes"><a class="hall-link" href="vibes.html" target="_blank">80's
@@ -61,9 +64,11 @@
           <li class="neon"><a class="hall-link" href="neon.html" target="_blank">Neon
               style</a></li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="booking" id="booking">
+    <section class="booking" id="booking">
+      <div class="container">
         <h2 class="hall-title">Забронировать</h2>
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
           <fieldset>
@@ -155,8 +160,8 @@
               </div>
               <div>
                 <label for="persons">Сколько человек</label>
-                <select name="persons" id="persons">
-                  <option value="1">1</option>
+                <input name="persons" id="persons">
+                <!-- <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -166,7 +171,7 @@
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-                </select>
+                </input> -->
               </div>
             </div>
 
@@ -193,17 +198,21 @@
 
           <button type="submit">Забронировать</button>
         </form>
-      </section>
+      </div>
+    </section>
 
-      <section class="about" id="about">
+    <section class="about" id="about">
+      <div class="container">
         <h2 class="hall-title">О нас</h2>
-        <p class="about-text">Для наших гостей мы создали концептуально новое игровое пространство выртуальной
-          реальности в
-          центральной части города</p>
-        <p class="about-twotext">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
-          Вас
-          топовыми игровыми
-          разработками со всего мира.</p>
+        <div style="margin-bottom: 78px">
+          <p class="about-text">Для наших гостей мы создали концептуально новое игровое пространство выртуальной
+            реальности в
+            центральной части города</p>
+          <p class="about-text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
+            Вас
+            топовыми игровыми
+            разработками со всего мира.</p>
+        </div>
         <blockquote class="blockquote">
           <p class="blockquote-text">GAME OVER -
             это место незабываемых впечатлений</p>
@@ -211,9 +220,11 @@
             создатель игровой
             индустрии GAME OVER</p>
         </blockquote>
-      </section>
+      </div>
+    </section>
 
-      <section class="faq">
+    <section class="faq">
+      <div class="container">
         <h2 class="hall-title">Частые вопросы</h2>
         <ul class="faq-list">
           <li class="faq-list__item">Можно ли забронировать комнату онлайн?</li>
@@ -222,9 +233,11 @@
           <li class="faq-list__item">Как получить VIP карту?</li>
           <li class="faq-list__item">Какая комната самая популярная?</li>
         </ul>
-      </section>
-    </main>
-    <footer>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
       <h2 class="hall-title">контакты</h2>
       <address>
         <p class="address-text">г. Москва
@@ -268,9 +281,8 @@
           </li>
         </ul>
       </nav>
-
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>

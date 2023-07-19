@@ -1,6 +1,11 @@
 .game-over {
   padding-top: 146px;
   margin-bottom: 100px;
+  background-image: url("../images/hall/prev.png");
+  background-size: 675px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  min-height: 969px;
 }
 
 .go-title {
@@ -18,12 +23,9 @@
   line-height: 50px;
   letter-spacing: 0;
   padding-left: 100px;
-  background-image: url("../images/hall/prev.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 752px;
-  background-position: right;
+
 }
+
 
 .hall-title {
   margin: 0 0 60px 0;
@@ -125,17 +127,20 @@
   margin: 0 0 30px;
 }
 
-.about-twotext {
-  margin: 0 0 78px;
+.about-text:last-child {
+  margin: 0;
 }
 
 .blockquote {
+  display: flow-root;
   margin: 0;
   font-style: normal;
 }
 
 .blockquote-text {
   text-decoration: none;
+  position: relative;
+  padding-left: 30px;
   font-size: 44px;
   font-weight: 400;
   line-height: 50px;
@@ -145,12 +150,29 @@
   margin: 0 0 40px 0;
 }
 
+.blockquote-text:after {
+  content: " ”";
+  color: #6C0287;
+  font-weight: 900;
+}
+
+.blockquote-text::before {
+  content: "“";
+  position: absolute;
+  color: #6C0287;
+  font-weight: 900;
+  top: 8px;
+  left: 0;
+  padding-right: 16px;
+  line-height: 25px;
+}
+
+
 .author-text {
   margin: 0;
   line-height: 28px;
-  white-space: pre-line;
-  max-width: 360px;
-  margin-left: auto;
+  max-width: 380px;
+  float: right;
 }
 
 .author-text::before {
@@ -162,7 +184,7 @@
   border-radius: 50%;
   background-image: url('../images/boss.jpeg');
   background-size: cover;
-  background-position: center;
+  background-position: center top 22%;
   background-repeat: no-repeat;
 }
 
@@ -198,16 +220,15 @@
 }
 
 .social-list {
+  font-size: 0;
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 50px;
 }
 
 .social-item {
   margin-right: 26px;
   display: inline-block;
-  height: 50px;
 }
 
 .social-item:last-child {
