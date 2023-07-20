@@ -81,22 +81,14 @@ iframe {
 Чтобы контент не прижимался к краям экрана
 */
 
-.container {
+.previos-wrapper {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-
-address {
-  font-style: normal;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  margin: 0 0 35px 0;
-}
-
-
-footer {
-  margin-bottom: 50px;
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }

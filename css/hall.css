@@ -1,11 +1,14 @@
-.game-over {
-  padding-top: 146px;
-  margin-bottom: 100px;
+.container_prev {
   background-image: url("../images/hall/prev.png");
   background-size: 675px;
   background-repeat: no-repeat;
   background-position: bottom right;
-  min-height: 969px;
+  min-height: 832px;
+}
+
+.previos {
+  padding: 146px 0 50px;
+
 }
 
 .go-title {
@@ -51,7 +54,7 @@
 }
 
 .hall {
-  margin-bottom: 100px;
+  padding: 50px 0;
 }
 
 .hall-list {
@@ -109,18 +112,14 @@
 }
 
 .booking {
-  margin-bottom: 100px;
+  padding: 50px 0;
 }
 
 .about {
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  margin-bottom: 100px;
-}
-
-.about {
-  margin-bottom: 78px;
+  padding: 50px 0 39px;
 }
 
 .about-text {
@@ -161,17 +160,16 @@
   position: absolute;
   color: #6C0287;
   font-weight: 900;
-  top: 8px;
+  top: -8px;
   left: 0;
-  padding-right: 16px;
-  line-height: 25px;
 }
 
 
 .author-text {
   margin: 0;
   line-height: 28px;
-  max-width: 380px;
+  max-width: 400px;
+  padding-right: 50px;
   float: right;
 }
 
@@ -187,6 +185,20 @@
   background-position: center top 22%;
   background-repeat: no-repeat;
 }
+
+.address {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0 0 35px 0;
+}
+
+
+.footer {
+  padding: 50px 0;
+}
+
 
 .address-text {
   padding-left: 62px;

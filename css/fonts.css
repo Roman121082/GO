@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Arial";
   src: local("Arial"), local("Arial-Regular"), url('../fonts/Arial.woff2') format("woff2"),
     url('../fonts/Arial.woff') format("woff");
@@ -20,4 +20,4 @@
     url('../fonts/Arial-Black.woff') format("woff");
   font-weight: 900;
   font-display: swap;
-}
+} */
