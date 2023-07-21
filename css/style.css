@@ -19,6 +19,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+  font-size: 20px;
   background-color: #1b1a1b;
   color: #ffffff;
   font-weight: 400;
@@ -80,12 +81,6 @@ iframe {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
-
-.previos-wrapper {
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
 .container {
   max-width: 1200px;

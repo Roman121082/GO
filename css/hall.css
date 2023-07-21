@@ -2,8 +2,8 @@
   background-image: url("../images/hall/prev.png");
   background-size: 675px;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  min-height: 832px;
+  background-position: bottom right 15px;
+  min-height: 823px;
 }
 
 .previos {
@@ -30,7 +30,7 @@
 }
 
 
-.hall-title {
+.section-title {
   margin: 0 0 60px 0;
   text-align: center;
   font-size: 40px;
@@ -53,7 +53,7 @@
   text-transform: uppercase;
 }
 
-.hall {
+.section {
   padding: 50px 0;
 }
 
@@ -69,55 +69,40 @@
   text-align: center;
 }
 
-.hall-link {
+.hall-list__item {
+  padding: 275px 0;
+  white-space: pre-line;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.hall-list__item_vibes {
+  background-image: url("../images/hall/vibes.jpg");
+
+}
+
+.hall-list__item_starwars {
+  background-image: url("../images/hall/star-wars.jpg");
+}
+
+.hall-list__item_wildwest {
+  background-image: url("../images/hall/wild-west.jpg");
+}
+
+.hall-list__item_neon {
+  background-image: url("../images/hall/neon-style.jpg");
+  margin: 0;
+}
+
+.hall__link {
   color: #fff;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
 }
 
-.vibes {
-  background-image: url("../images/hall/vibes.jpg");
-  padding: 275px 0;
-  white-space: pre-line;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 60px;
-}
-
-.starwars {
-  background-image: url("../images/hall/star-wars.jpg");
-  padding: 275px 0;
-  white-space: pre-line;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 60px;
-}
-
-.wildwest {
-  background-image: url("../images/hall/wild-west.jpg");
-  padding: 275px 0;
-  white-space: pre-line;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 60px;
-}
-
-.neon {
-  background-image: url("../images/hall/neon-style.jpg");
-  padding: 275px 0;
-  white-space: pre-line;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.booking {
-  padding: 50px 0;
-}
-
 .about {
-  font-size: 20px;
-  font-weight: 400;
   line-height: 28px;
   padding: 50px 0 39px;
 }
@@ -193,12 +178,6 @@
   line-height: 32px;
   margin: 0 0 35px 0;
 }
-
-
-.footer {
-  padding: 50px 0;
-}
-
 
 .address-text {
   padding-left: 62px;
