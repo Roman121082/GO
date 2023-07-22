@@ -1,4 +1,7 @@
 @import "fonts.css";
+@import "hall.css";
+@import "faq.css";
+@import "normalize.css";
 
 * {
   box-sizing: border-box;
