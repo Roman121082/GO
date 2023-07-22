@@ -77,6 +77,10 @@
   margin-bottom: 60px;
 }
 
+.hall-list__item:last-child {
+  margin: 0;
+}
+
 .hall-list__item_vibes {
   background-image: url("../images/hall/vibes.jpg");
 
@@ -92,7 +96,6 @@
 
 .hall-list__item_neon {
   background-image: url("../images/hall/neon-style.jpg");
-  margin: 0;
 }
 
 .hall__link {
@@ -181,28 +184,26 @@
 
 .address-text {
   padding-left: 62px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.address-text_location {
   margin: 0 0 38px;
   line-height: 28px;
   white-space: pre-line;
   background-image: url('../images/icon/location.svg');
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
-.phone-text {
-  padding-left: 62px;
+.address-text_phone {
   margin: 0 0 11px;
   background-image: url('../images/icon/phone.svg');
-  background-position: center left;
-  background-repeat: no-repeat;
+
 }
 
-.mail-text {
+.address-text_mail {
   margin: 0;
-  padding-left: 62px;
   background-image: url('../images/icon/mail.svg');
-  background-position: center left;
-  background-repeat: no-repeat;
 }
 
 .address-link {
