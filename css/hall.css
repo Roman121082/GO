@@ -1,4 +1,4 @@
-.container_prev {
+.container_bg_png {
   background-image: url("../images/hall/prev.png");
   background-size: 675px;
   background-repeat: no-repeat;
@@ -6,12 +6,12 @@
   min-height: 823px;
 }
 
-.previos {
+.prev {
   padding: 146px 0 50px;
 
 }
 
-.go-title {
+.prev__title {
   margin: 0;
   font-size: 150px;
   line-height: 100%;
@@ -20,7 +20,7 @@
   letter-spacing: -15px;
 }
 
-.go-subtitle {
+.prev__subtitle {
   margin: 0;
   font-size: 28px;
   line-height: 50px;
@@ -30,7 +30,7 @@
 }
 
 
-.section-title {
+.section__title {
   margin: 0 0 60px 0;
   text-align: center;
   font-size: 40px;
@@ -40,24 +40,11 @@
   text-transform: uppercase;
 }
 
-.hall-section__title {
-  margin: 0 auto;
-  padding: auto 0;
-  padding-top: 275px;
-  max-width: 252px;
-  text-align: center;
-  font-size: 70px;
-  font-family: "Arial-Bold", sans-serif;
-  font-weight: 700;
-  line-height: 80px;
-  text-transform: uppercase;
-}
-
 .section {
   padding: 50px 0;
 }
 
-.hall-list {
+.halls-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -69,7 +56,7 @@
   text-align: center;
 }
 
-.hall-list__item {
+.halls__item {
   padding: 275px 0;
   white-space: pre-line;
   background-repeat: no-repeat;
@@ -77,28 +64,28 @@
   margin-bottom: 60px;
 }
 
-.hall-list__item:last-child {
+.halls__item:last-child {
   margin: 0;
 }
 
-.hall-list__item_vibes {
+.halls__item_theme_vibes {
   background-image: url("../images/hall/vibes.jpg");
 
 }
 
-.hall-list__item_starwars {
+.halls__item_theme_starwars {
   background-image: url("../images/hall/star-wars.jpg");
 }
 
-.hall-list__item_wildwest {
+.halls__item_theme_wildwest {
   background-image: url("../images/hall/wild-west.jpg");
 }
 
-.hall-list__item_neon {
+.halls__item_theme_neon {
   background-image: url("../images/hall/neon-style.jpg");
 }
 
-.hall__link {
+.halls__link {
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -110,11 +97,15 @@
   padding: 50px 0 39px;
 }
 
-.about-text {
+.about-box {
+  margin-bottom: 78px;
+}
+
+.about__text {
   margin: 0 0 30px;
 }
 
-.about-text:last-child {
+.about__text:last-child {
   margin: 0;
 }
 
@@ -124,7 +115,7 @@
   font-style: normal;
 }
 
-.blockquote-text {
+.blockquote__text {
   text-decoration: none;
   position: relative;
   padding-left: 30px;
@@ -137,13 +128,13 @@
   margin: 0 0 40px 0;
 }
 
-.blockquote-text:after {
+.blockquote__text:after {
   content: " ”";
   color: #6C0287;
   font-weight: 900;
 }
 
-.blockquote-text::before {
+.blockquote__text::before {
   content: "“";
   position: absolute;
   color: #6C0287;
@@ -153,7 +144,7 @@
 }
 
 
-.author-text {
+.blockquote__author {
   margin: 0;
   line-height: 28px;
   max-width: 400px;
@@ -161,7 +152,7 @@
   float: right;
 }
 
-.author-text::before {
+.blockquote__author::before {
   content: "";
   float: left;
   width: 80px;
@@ -182,31 +173,32 @@
   margin: 0 0 35px 0;
 }
 
-.address-text {
+.address__text {
   padding-left: 62px;
   background-position: center left;
   background-repeat: no-repeat;
 }
 
-.address-text_location {
+.address__text_location {
   margin: 0 0 38px;
   line-height: 28px;
   white-space: pre-line;
   background-image: url('../images/icon/location.svg');
 }
 
-.address-text_phone {
+.address__text_phone {
   margin: 0 0 11px;
   background-image: url('../images/icon/phone.svg');
 
 }
 
-.address-text_mail {
+.address__text_mail {
   margin: 0;
   background-image: url('../images/icon/mail.svg');
 }
 
-.address-link {
+.link {
+  display: block;
   text-decoration: none;
   color: inherit;
 }
@@ -218,16 +210,16 @@
   padding: 0;
 }
 
-.social-item {
+.social__item {
   margin-right: 26px;
   display: inline-block;
 }
 
-.social-item:last-child {
+.social__item:last-child {
   margin: 0;
 }
 
-.social-link {
+.social__link {
   text-decoration: none;
   cursor: pointer;
   color: inherit;

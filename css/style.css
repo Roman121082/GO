@@ -1,7 +1,7 @@
-@import "fonts.css";
-@import "hall.css";
-@import "faq.css";
 @import "normalize.css";
+@import "hall.css";
+@import "fonts.css";
+@import "faq.css";
 
 * {
   box-sizing: border-box;
@@ -89,4 +89,10 @@ iframe {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.button {
+  color: #fff;
+  padding: 2px;
+  border: 2px solid #fff
 }
