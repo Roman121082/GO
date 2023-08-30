@@ -14,6 +14,7 @@
 .faq__item {
   padding: 20px 70px;
   margin-bottom: 20px;
+  line-height: 46px;
 }
 
 .faq__item:nth-child(even) {

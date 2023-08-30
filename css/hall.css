@@ -1,4 +1,4 @@
-.container_bg_png {
+.prev__container {
   background-image: url("../images/hall/prev.png");
   background-size: 675px;
   background-repeat: no-repeat;
@@ -8,7 +8,6 @@
 
 .prev {
   padding: 146px 0 50px;
-
 }
 
 .prev__title {
@@ -17,6 +16,7 @@
   line-height: 100%;
   font-family: "Arial-Black", sans-serif;
   font-weight: 900;
+  text-transform: uppercase;
   letter-spacing: -15px;
 }
 
@@ -26,7 +26,6 @@
   line-height: 50px;
   letter-spacing: 0;
   padding-left: 100px;
-
 }
 
 
@@ -49,7 +48,7 @@
   margin: 0;
   padding: 0;
   font-size: 70px;
-  font-family: "Arial-Bold", sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
@@ -62,6 +61,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .halls__item:last-child {
@@ -88,7 +88,11 @@
 .halls__link {
   color: #fff;
   text-decoration: none;
-  text-align: center;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -106,7 +110,7 @@
 }
 
 .about__text:last-child {
-  margin: 0;
+  margin-bottom: 78px;
 }
 
 .blockquote {
@@ -119,19 +123,19 @@
   text-decoration: none;
   position: relative;
   padding-left: 30px;
+  margin-bottom: 40px;
   font-size: 44px;
-  font-weight: 400;
   line-height: 50px;
   text-transform: uppercase;
-  margin-bottom: 40px;
   white-space: pre-line;
-  margin: 0 0 40px 0;
 }
 
 .blockquote__text:after {
   content: " ”";
   color: #6C0287;
   font-weight: 900;
+  width: 39px;
+  height: 35px;
 }
 
 .blockquote__text::before {
@@ -146,23 +150,22 @@
 
 .blockquote__author {
   margin: 0;
+  white-space: pre-line;
   line-height: 28px;
   max-width: 400px;
-  padding-right: 50px;
+  padding-right: 75px;
   float: right;
+  height: 80px;
 }
 
-.blockquote__author::before {
-  content: "";
-  float: left;
+.blockquote__img {
   width: 80px;
   height: 80px;
   margin-right: 30px;
   border-radius: 50%;
-  background-image: url('../images/boss.jpeg');
-  background-size: cover;
-  background-position: center top 22%;
-  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: 0 -10px;
+  float: right;
 }
 
 .address {
@@ -203,16 +206,16 @@
   color: inherit;
 }
 
-.social-list {
-  font-size: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.social__list {
+  height: 50px;
 }
 
 .social__item {
   margin-right: 26px;
   display: inline-block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
 }
 
 .social__item:last-child {
