@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "hall.css";
-@import "fonts.css";
+/* @import "fonts.css"; */
 @import "faq.css";
 
 * {
@@ -86,13 +86,13 @@ iframe {
 */
 
 .container {
-  max-width: 1200px;
+  max-width: 1210px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .button {
-  color: #fff;
+  color: #000;
   padding: 2px;
-  border: 2px solid #fff
+  background-color: #fff;
 }
