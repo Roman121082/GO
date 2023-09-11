@@ -12,14 +12,13 @@
   width: 675px;
   height: 762px;
   bottom: 0;
-  right: 0;
+  right: 15px;
 }
 
 .prev__title {
   margin: 0;
   font-size: 150px;
   line-height: 100%;
-  /* font-family: "Arial-Black", sans-serif; */
   font-family: Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
