@@ -35,7 +35,7 @@
 
 
 .section__title {
-  margin: 0 0 60px 0;
+  margin: 0 0 40px 0;
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -51,32 +51,43 @@
   padding: 146px 0 50px;
 }
 
-.halls-list {
+
+.halls__list {
+  display: block;
   list-style: none;
+  height: 720px;
   margin: 0;
   padding: 0;
   font-size: 70px;
   font-weight: 700;
-  line-height: 80px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .halls__item {
-  padding: 315px 0;
-  background-repeat: no-repeat;
+  float: left;
+  width: 580px;
+  margin: 0 20px 20px 0;
+  padding: 135px 0;
   background-size: cover;
-  margin-bottom: 60px;
-  text-align: center;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
-.halls__item:last-child {
+.halls__item:nth-last-child(3) {
+  margin: 0 0 20px 0
+}
+
+.halls__item:nth-last-child(2) {
+  margin: 0 20px 0 0;
+}
+
+.halls__item:nth-last-child(1) {
   margin: 0;
 }
 
 .halls__item_theme_vibes {
   background-image: url("../images/hall/vibes.jpg");
-
 }
 
 .halls__item_theme_starwars {
@@ -102,14 +113,52 @@
   cursor: pointer;
 }
 
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .container-booking {
   padding: 0 37px;
-  max-width: 1210px;
-  margin: 0 auto;
+}
+
+.comments__item {
+  margin-bottom: 50px;
+  height: 319px;
+}
+
+.comments__item:last-child {
+  margin-bottom: 0;
+}
+
+.container-comments {
+  padding: 0 100px;
+}
+
+.article__img {
+  margin-bottom: 11px;
+}
+
+.article__figure {
+  float: left;
+  margin-right: 20px;
+}
+
+.article__figcaption {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .fieldset {
   margin-bottom: 1px;
+}
+
+.comments__text {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 53px;
 }
 
 .about {

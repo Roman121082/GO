@@ -84,12 +84,6 @@ iframe {
 Чтобы контент не прижимался к краям экрана
 */
 
-.container {
-  max-width: 1210px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .button {
   color: #000;
   padding: 2px;
