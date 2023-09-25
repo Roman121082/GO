@@ -34,13 +34,82 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <a class="header__logo" href="!#">
+          <img src="images/favicon/logo.svg" alt="">
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="">залы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Бронь</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">отзывы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <a class="header__button" href="">Заказать звонок</a>
+      </nav>
 
+    </div>
+  </header>
   <main>
     <section class="section prev">
       <div class="container prev__container">
         <img class="prev__img" src="./images/hall/prev.png" alt="">
         <h1 class="prev__title">game over</h1>
         <p class="prev__subtitle">Новый формат игр и отдыха</p>
+        <div class="info">
+          <ul class="info__list">
+            <li class="info__item">
+              <p class="info__title info__title_hall">4</p>
+              <p class="info__text">Тематических
+                зала</p>
+            </li>
+            <li class="info__item">
+              <p class="info__title info__title_equipment">new</p>
+              <p class="info__text">Новейшая
+                аппаратура</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section price-list">
+      <div class="container">
+        <h2 class="section__title">У нас есть все для классного
+          отдыха с друзьями!</h2>
+        <ul class="price-list__list">
+          <li class="price-list__item">
+            <img class="price-list__img" src="images/price-list/01.jpg" alt="">
+          </li>
+          <li class="price-list__item">
+            <img class="price-list__img" src="images/price-list/02.jpg" alt="">
+          </li>
+          <li class="price-list__item">
+            <img class="price-list__img" src="images/price-list/03.jpg" alt="">
+          </li>
+          <li class="price-list__item">
+            <img class="price-list__img" src="images/price-list/04.jpg" alt="">
+          </li>
+          <li class="price-list__item">
+            <img class="price-list__img" src="images/price-list/05.jpg" alt="">
+          </li>
+          <li class="price-list__item">
+            <img class="price-list__img" src="images/price-list/06.jpg" alt="">
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -62,28 +131,40 @@
 
     <section class="section booking" id="booking">
       <div class="container container-booking">
-        <h2 class="section__title">Забронировать</h2>
-        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
-          <fieldset class="fieldset">
-            <label class="label">
-              <input class="radio" type="radio" name="hall" value="80-vibes">80's vibes
+        <h2 class="section__title">Забронировать зал просто</h2>
+        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
+          <fieldset class="fieldset booking__fieldset">
+            <label class="booking__label">
+              <input class="booking__radio_theme_hall" type="radio" name="hall" value="80-vibes">
+              <button class="booking__radio-button_theme_hall">
+                <p class="booking__radio-text_theme_hall">80's vibes</p>
+              </button>
             </label>
             <label class="label">
-              <input class="radio" type="radio" name="hall" value="star-wars">star wars
+              <input class="booking__radio_theme_hall" type="radio" name="hall" value="star-wars">
+              <button class="booking__radio-button_theme_hall">
+                <p class="booking__radio-text_theme_hall">star wars</p>
+              </button>
             </label>
             <label class="label">
-              <input class="radio" type="radio" name="hall" value="wild-west">wild west
+              <input class="booking__radio_theme_hall" type="radio" name="hall" value="wild-west">
+              <button class="booking__radio-button_theme_hall">
+                <p class="booking__radio-text_theme_hall">wild west</p>
+              </button>
             </label>
             <label class="label">
-              <input class="radio" type="radio" name="hall" value="neon-style">neon style
+              <input class="booking__radio_theme_hall" type="radio" name="hall" value="neon-style">
+              <button class="booking__radio-button_theme_hall">
+                <p class="booking__radio-text_theme_hall">neon style</p>
+              </button>
             </label>
           </fieldset>
 
-          <fieldset class="fieldset">
+          <fieldset class="fieldset entertainment">
             <legend class="legend">
               Собери набор развлечений
             </legend>
-            <fieldset class="fieldset">
+            <fieldset class="fieldset console">
               <legend class="legend">
                 Приставка:
               </legend>
@@ -102,7 +183,7 @@
             </fieldset>
 
             <fieldset class="fieldset">
-              <legend class="legend">
+              <legend class="legend board-games">
                 Настольные игры:
               </legend>
               <label class="label">
@@ -136,7 +217,7 @@
             </fieldset>
           </fieldset>
 
-          <fieldset class="fieldset">
+          <fieldset class="fieldset additionally">
             <legend class="legend">
               Выбери дату и время
             </legend>

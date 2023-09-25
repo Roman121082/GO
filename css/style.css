@@ -59,6 +59,8 @@ p,
 figure,
 fieldset {
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
 iframe {
@@ -88,4 +90,140 @@ iframe {
   color: #000;
   padding: 2px;
   background-color: #fff;
+}
+
+.fieldset {
+  display: flex;
+}
+
+.booking__fieldset {
+  justify-content: space-between;
+}
+
+
+.booking__radio_theme_hall {
+  appearance: none;
+}
+
+.booking__radio-button_theme_hall {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 7px 15px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.booking__radio-text_theme_hall {
+  width: 220px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.entertainment {
+  display: flex;
+}
+
+.console,
+.board-games,
+.additionally {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__nav {
+  display: flex;
+  text-transform: uppercase;
+  padding-top: 30px;
+  align-items: center;
+  font-size: 22px;
+}
+
+.header__logo {
+  margin-right: 96px;
+}
+
+.header__list {
+  display: flex;
+  margin-right: 97px;
+}
+
+.header__item {
+  padding-right: 40px;
+}
+
+.header__item:last-child {
+  padding-right: 0;
+}
+
+.header__button {
+  line-height: 30px;
+  padding: 13px 32px;
+  border: 3px solid #CD06FF;
+  border-radius: 10px;
+}
+
+
+
+.section__title {
+  margin: 0 0 40px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.price-list__list {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 40px;
+  column-gap: 20px;
+  grid-template-columns: 40px;
+  flex-wrap: wrap;
+}
+
+.price-list__item {
+  display: flex;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  height: 210px;
+  width: 190px;
+  margin-right: 40px;
+  text-align: center;
+
+}
+
+.info__item:last-child {
+  margin-right: 0;
+}
+
+.info__list {
+  display: flex;
+}
+
+.info__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #CD06FF;
+  margin-bottom: 28px;
+}
+
+.info__title_hall {
+  font-size: 100px;
+}
+
+.info__title_equipment {
+  font-size: 75px;
+  padding-top: 28px;
+}
+
+.info__text {
+  display: flex;
+  font-size: 30px;
+  align-items: flex-end;
 }
