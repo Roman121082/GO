@@ -92,36 +92,175 @@ iframe {
   background-color: #fff;
 }
 
-.fieldset {
+.booking__fieldset {
   display: flex;
 }
 
 .booking__fieldset {
   justify-content: space-between;
+  height: 55px;
+  margin-bottom: 60px;
 }
 
+.booking-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.booking__label {
+  display: flex;
+  width: 250px;
+  margin-right: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.booking__text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.booking__label:last-child {
+  margin-right: 0;
+}
 
 .booking__radio_theme_hall {
+  position: relative;
   appearance: none;
+  -webkit-appearance: none;
 }
 
-.booking__radio-button_theme_hall {
+.booking__radio_theme_hall:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 55px;
   background-color: #fff;
   border-radius: 8px;
   padding: 7px 15px;
-  color: #000;
   text-transform: uppercase;
 }
 
+.booking__radio_theme_hall:checked:before {
+  background-color: #e5abf3;
+}
+
 .booking__radio-text_theme_hall {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 7px;
+  left: 15px;
   width: 220px;
   font-size: 30px;
   line-height: 40px;
   font-weight: 700;
+  color: #000;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.fieldset__info {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.fieldset__date {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.fieldset__date-input {
+  display: flex;
+  margin-right: 35px;
+}
+
+.fieldset__date-input:last-child {
+  margin-right: 0;
+}
+
+.fieldset__date-lable {
+  position: relative;
+}
+
+.info__input {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 12px 20px;
+  border: none;
+  margin-bottom: 35px;
+}
+
+.info__input:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset__date-input {
+  position: relative;
+  width: 135px;
+  height: 52px;
+}
+
+.fieldset__date-label {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
+.fieldset__firstname-label,
+.fieldset__surname-label,
+.fieldset__phone-label,
+.fieldset__mail-label {
+  position: relative;
+  display: flex;
+  gap: 35px;
+}
+
+.fieldset__firstname-label::before,
+.fieldset__surname-label::before,
+.fieldset__phone-label::before,
+.fieldset__mail-label::before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.fieldset__firstname-label::before {
+  content: 'Имя';
+}
+
+.fieldset__surname-label::before {
+  content: 'Фамилия';
+}
+
+.fieldset__phone-label::before {
+  content: 'Номер телефона';
+}
+
+.fieldset__mail-label::before {
+  content: 'E-mail';
 }
 
 .entertainment {
   display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 28px;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .console,
@@ -129,6 +268,108 @@ iframe {
 .additionally {
   display: flex;
   flex-direction: column;
+}
+
+.additionally {
+  margin-right: 0;
+}
+
+.booking__legend {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+
+.console__legend,
+.board-games__legend,
+.additionally__legend {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+
+.console__label,
+.board-games__label,
+.additionally__label {
+  position: relative;
+  padding-left: 39px;
+  margin-bottom: 22px;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.console__label:last-child,
+.board-games__label:last-child,
+.additionally__label:last-child {
+  margin-bottom: 0;
+}
+
+
+.console__label:before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.board-games__label::before,
+.additionally__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.board-games__checkbox:after,
+.additionally__checkbox:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  opacity: 0;
+}
+
+.console__radio:after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: blue;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.console__radio:checked:after {
+  opacity: 1;
+}
+
+.board-games__checkbox:checked:after,
+.additionally__checkbox:checked:after {
+  opacity: 1;
+}
+
+.console__radio,
+.board-games__checkbox,
+.additionally__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .header__nav {
@@ -163,7 +404,11 @@ iframe {
   border-radius: 10px;
 }
 
-
+.fieldset__name,
+.fieldset__phone {
+  display: flex;
+  flex-direction: column;
+}
 
 .section__title {
   margin: 0 0 40px 0;
@@ -226,4 +471,30 @@ iframe {
   display: flex;
   font-size: 30px;
   align-items: flex-end;
+}
+
+.button {
+  padding: 16px 50px;
+  margin-bottom: 44px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #6C0287;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.contacts {
+  margin-bottom: 156px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.fotter {
+  padding-bottom: 10px;
 }
