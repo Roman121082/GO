@@ -68,20 +68,21 @@
         <img class="prev__img" src="./images/hall/prev.png" alt="">
         <h1 class="prev__title">game over</h1>
         <p class="prev__subtitle">Новый формат игр и отдыха</p>
-        <div class="info">
-          <ul class="info__list">
-            <li class="info__item">
-              <p class="info__title info__title_hall">4</p>
-              <p class="info__text">Тематических
+        <div class="prev-info">
+          <ul class="prev-info__list">
+            <li class="prev-info__item">
+              <p class="prev-info__title prev-info__title_hall">4</p>
+              <p class="prev-info__text">Тематических
                 зала</p>
             </li>
-            <li class="info__item">
-              <p class="info__title info__title_equipment">new</p>
-              <p class="info__text">Новейшая
+            <li class="prev-info__item">
+              <p class="prev-info__title prev-info__title_equipment">new</p>
+              <p class="prev-info__text">Новейшая
                 аппаратура</p>
             </li>
           </ul>
         </div>
+        <button class="button button_color_violet" type="submit">Забронировать</button>
       </div>
     </section>
 
@@ -93,21 +94,29 @@
         <ul class="price-list__list">
           <li class="price-list__item">
             <img class="price-list__img" src="images/price-list/01.jpg" alt="">
+            <p class="price-list__text">VR очки</p>
           </li>
           <li class="price-list__item">
             <img class="price-list__img" src="images/price-list/02.jpg" alt="">
+            <p class="price-list__text">Аудио-система 5.1
+              с отличным звуком</p>
           </li>
           <li class="price-list__item">
             <img class="price-list__img" src="images/price-list/03.jpg" alt="">
+            <p class="price-list__text">Караоке (4 микрофона)</p>
           </li>
           <li class="price-list__item">
             <img class="price-list__img" src="images/price-list/04.jpg" alt="">
+            <p class="price-list__text">Настольные игры</p>
           </li>
           <li class="price-list__item">
             <img class="price-list__img" src="images/price-list/05.jpg" alt="">
+            <p class="price-list__text">Кино сервисы Netflix, IVI,
+              MegoGo, КиноПоиск, Okko</p>
           </li>
           <li class="price-list__item">
             <img class="price-list__img" src="images/price-list/06.jpg" alt="">
+            <p class="price-list__text">PlayStation 5</p>
           </li>
         </ul>
       </div>
@@ -136,20 +145,20 @@
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
           <fieldset class="fieldset booking__fieldset">
             <label class="booking__label">
-              <input class="booking__radio_theme_hall" type="radio" name="hall" value="80-vibes">
-              <p class="booking__radio-text_theme_hall">80's vibes</p>
+              <input class="booking__radio" type="radio" name="hall" value="80-vibes">
+              <p class="booking__radio-text">80's vibes</p>
             </label>
             <label class="booking__label">
-              <input class="booking__radio_theme_hall" type="radio" name="hall" value="star-wars">
-              <p class="booking__radio-text_theme_hall">star wars</p>
+              <input class="booking__radio" type="radio" name="hall" value="star-wars">
+              <p class="booking__radio-text">star wars</p>
             </label>
             <label class="booking__label">
-              <input class="booking__radio_theme_hall" type="radio" name="hall" value="wild-west">
-              <p class="booking__radio-text_theme_hall">wild west</p>
+              <input class="booking__radio" type="radio" name="hall" value="wild-west">
+              <p class="booking__radio-text">wild west</p>
             </label>
             <label class="booking__label">
-              <input class="booking__radio_theme_hall" type="radio" name="hall" value="neon-style">
-              <p class="booking__radio-text_theme_hall">neon style</p>
+              <input class="booking__radio" type="radio" name="hall" value="neon-style">
+              <p class="booking__radio-text">neon style</p>
             </label>
           </fieldset>
 
@@ -160,7 +169,7 @@
                 Собери набор развлечений
               </legend>
               <fieldset class="fieldset console">
-                <legend class="booking__legend">
+                <legend class="booking__legend booking__legend_checkbox">
                   Приставка:
                 </legend>
                 <label class="console__label">
@@ -178,7 +187,7 @@
               </fieldset>
 
               <fieldset class="fieldset board-games">
-                <legend class="booking__legend">
+                <legend class="booking__legend booking__legend_checkbox">
                   Настольные игры:
                 </legend>
                 <label class="board-games__label">
@@ -199,7 +208,7 @@
               </fieldset>
 
               <fieldset class="fieldset additionally">
-                <legend class="booking__legend">
+                <legend class="booking__legend booking__legend_checkbox">
                   Дополнительно:
                 </legend>
                 <label class="additionally__label">
@@ -213,7 +222,7 @@
             </fieldset>
 
             <fieldset class="fieldset info">
-              <legend class="booking__legend">
+              <legend class="booking__legend booking__legend_info">
                 Выбери дату и время
               </legend>
 
@@ -226,7 +235,7 @@
                   <input class="fieldset__date-input" type="time" required>
                 </div>
                 <label class="info__label" for="persons"></label>
-                <input class="info__input" type="text" name="persons" id="persons" placeholder="Сколько человек*"
+                <input class="info__input" type="text" name="persons" id="persons" placeholder="Сколько человек"
                   required>
 
               </div>
@@ -243,11 +252,10 @@
                   pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
 
                 <label class="fieldset__mail-label" for="phone"></label>
-                <input class="info__input" type="email" name="mail" id="mail" required placeholder="E-mail">
+                <input class="info__input" type="email" name="mail" id="mail" required>
               </div>
             </fieldset>
-
-            <button class="button" type="submit">Забронировать</button>
+            <button class="button button_color_white" type="submit">Забронировать</button>
           </div>
         </form>
       </div>
@@ -348,36 +356,36 @@
           </p>
           <a class="address__text address__text_phone link" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
           <a class="address__text address__text_mail  link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
+          <nav class="footer__social">
+            <ul class="footer__social-list">
+
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-ico" src="images/icon/vk.svg" alt="В контакте">
+                </a>
+              </li>
+
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-ico" src="images/icon/telegram.svg" alt="Телеграмм">
+                </a>
+              </li>
+
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-ico" src="images/icon/pinterest.svg" alt="Пинтерест">
+                </a>
+              </li>
+
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-ico" src="images/icon/stumbleupon.svg" alt="stumbleupon">
+                </a>
+              </li>
+            </ul>
+          </nav>
         </address>
 
-        <nav class="footer__social">
-          <ul class="social__list">
-
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__ico" src="images/icon/vk.svg" alt="В контакте">
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__ico" src="images/icon/telegram.svg" alt="Телеграмм">
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__ico" src="images/icon/pinterest.svg" alt="Пинтерест">
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__ico" src="images/icon/stumbleupon.svg" alt="stumbleupon">
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
       <div class="copyright">
         <p class="copyright__text">© Game Over, 2022</p>
