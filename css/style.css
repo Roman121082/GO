@@ -511,7 +511,7 @@ iframe {
   background-color: #6C0287;
   color: #fff;
   margin-left: 0;
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 .button_color_white {
