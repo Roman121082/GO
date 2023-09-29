@@ -86,6 +86,44 @@ iframe {
 Чтобы контент не прижимался к краям экрана
 */
 
+.header__nav {
+  display: flex;
+  text-transform: uppercase;
+  padding-top: 30px;
+  align-items: center;
+  font-size: 22px;
+}
+
+.header__logo {
+  margin-right: 96px;
+}
+
+.header__list {
+  display: flex;
+  margin-right: 97px;
+}
+
+.header__item {
+  padding-right: 40px;
+}
+
+.header__item:last-child {
+  padding-right: 0;
+}
+
+.header__button {
+  line-height: 30px;
+  padding: 13px 32px;
+  border: 3px solid #CD06FF;
+  border-radius: 10px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 90px;
+  left: 550px;
+}
+
 .booking__fieldset {
   display: flex;
 }
@@ -383,38 +421,6 @@ iframe {
 .additionally__checkbox {
   appearance: none;
   -webkit-appearance: none;
-}
-
-.header__nav {
-  display: flex;
-  text-transform: uppercase;
-  padding-top: 30px;
-  align-items: center;
-  font-size: 22px;
-}
-
-.header__logo {
-  margin-right: 96px;
-}
-
-.header__list {
-  display: flex;
-  margin-right: 97px;
-}
-
-.header__item {
-  padding-right: 40px;
-}
-
-.header__item:last-child {
-  padding-right: 0;
-}
-
-.header__button {
-  line-height: 30px;
-  padding: 13px 32px;
-  border: 3px solid #CD06FF;
-  border-radius: 10px;
 }
 
 .fieldset__name,
