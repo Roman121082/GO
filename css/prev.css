@@ -1,0 +1,82 @@
+.prev__container {
+  position: relative;
+  min-height: 823px;
+}
+
+.prev {
+  padding: 50px 0 50px;
+}
+
+.prev__img {
+  position: absolute;
+  width: 675px;
+  height: 762px;
+  bottom: 0;
+  right: 15px;
+}
+
+.prev__title {
+  margin: 0;
+  font-size: 150px;
+  line-height: 100%;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -15px;
+}
+
+.prev__subtitle {
+  margin: 0;
+  font-size: 28px;
+  line-height: 50px;
+  letter-spacing: 0;
+  padding-left: 100px;
+  margin-bottom: 65px;
+}
+
+
+.prev__arrow-link {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prev-info {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.prev-info__list {
+  margin-bottom: 150px;
+}
+
+.prev-info__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  text-align: center;
+
+}
+
+.prev-info__item:last-child {
+  margin-right: 0;
+}
+
+.prev-info__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #CD06FF;
+  margin-bottom: 28px;
+  font-size: 100px;
+}
+
+.prev-info__title-equipment {
+  font-size: 75px;
+  padding-top: 28px;
+}
+
+.prev-info__text {
+  white-space: pre-line;
+  font-size: 30px;
+}

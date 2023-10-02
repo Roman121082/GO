@@ -1,0 +1,44 @@
+.price-list__list {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 40px;
+  column-gap: 20px;
+  grid-template-columns: 40px;
+  flex-wrap: wrap;
+}
+
+.price-list__item {
+  display: flex;
+  width: 380px;
+  padding: 166px 40px 6px;
+  font-size: 20px;
+  line-height: 28px;
+  white-space: pre-line;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.price-list__item_bg_vr {
+  background-image: url("../images/price-list/01.jpg");
+}
+
+.price-list__item_bg_audio {
+  background-image: url("../images/price-list/02.jpg");
+}
+
+.price-list__item_bg_karaoke {
+  background-image: url("../images/price-list/03.jpg");
+}
+
+.price-list__item_bg_game {
+  background-image: url("../images/price-list/04.jpg");
+}
+
+.price-list__item_bg_films {
+  background-image: url("../images/price-list/05.jpg");
+}
+
+.price-list__item_bg_playStation {
+  background-image: url("../images/price-list/06.jpg");
+}

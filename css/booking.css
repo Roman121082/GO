@@ -1,0 +1,267 @@
+.booking {
+  background-color: #440F51;
+}
+
+.booking__form {
+  padding-bottom: 44px;
+}
+
+.booking__fieldset {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  margin-bottom: 60px;
+}
+
+.booking-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.booking__text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.booking__label {
+  display: flex;
+  width: 250px;
+  margin-right: 60px;
+  position: relative;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000;
+  z-index: 10;
+}
+
+.booking__label:checked:before {
+  background-color: #e5abf3;
+}
+
+.booking__label:last-child {
+  margin-right: 0;
+}
+
+.booking__radio {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.booking__radio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 55px;
+  background-color: #fff;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.booking__radio:checked:before {
+  background-color: #e5abf3;
+}
+
+.booking__legend {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.entertainment__legend {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.booking__legend_info {
+  margin-bottom: 60px;
+}
+
+.info {
+  margin-bottom: 40px;
+}
+
+.info__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.fieldset__info {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.fieldset__date {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.fieldset__label {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.fieldset__date-input {
+  display: flex;
+  margin-right: 35px;
+}
+
+.fieldset__date-input:last-child {
+  margin-right: 0;
+}
+
+.fieldset__date-lable {
+  position: relative;
+}
+
+.info__input {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 12px 20px;
+  border: none;
+  margin-bottom: 35px;
+}
+
+.info__input:last-child {
+  margin-bottom: 0;
+}
+
+.fieldset__date-input {
+  position: relative;
+  width: 135px;
+  height: 52px;
+}
+
+.fieldset__date-label {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+
+.fieldset__firstname-label,
+.fieldset__surname-label,
+.fieldset__phone-label,
+.fieldset__mail-label {
+  position: relative;
+  display: flex;
+  gap: 35px;
+}
+
+.fieldset__firstname-label::before,
+.fieldset__surname-label::before,
+.fieldset__phone-label::before,
+.fieldset__mail-label::before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.entertainment {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 28px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.entertainment__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.entertainment__label {
+  position: relative;
+  padding-left: 39px;
+  margin-bottom: 22px;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.entertainment__label:last-child {
+  margin-bottom: 0;
+}
+
+.entertainment__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.entertainment__label_type_radio::before {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+}
+
+.entertainment__checkbox:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: blue;
+  opacity: 0;
+}
+
+.entertainment__checkbox_type_radio:after {
+  top: 5px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+.entertainment__checkbox:checked:after {
+  opacity: 1;
+}
+
+.entertainment__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.fieldset__name,
+.fieldset__phone {
+  display: flex;
+  flex-direction: column;
+}
