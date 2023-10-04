@@ -107,37 +107,44 @@
 .info__box {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 
-.fieldset__info {
+.info__fieldset {
   display: flex;
   flex-direction: column;
   width: 300px;
 }
 
-.fieldset__date {
+.info__date {
+  padding-top: 22px;
   display: flex;
   margin-bottom: 35px;
+  justify-content: space-between;
 }
 
-.fieldset__label {
+.info__label {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 6px;
 }
 
-.fieldset__date-input {
+.info__date-input {
   display: flex;
+  width: 135px;
   margin-right: 35px;
+  line-height: 28px;
+  padding: 11px 8px;
+  border: none;
 }
 
-.fieldset__date-input:last-child {
+
+
+.info__date-input:last-child {
   margin-right: 0;
 }
 
-.fieldset__date-lable {
+.info__date-lable {
   position: relative;
 }
 
@@ -147,46 +154,18 @@
   line-height: 28px;
   padding: 12px 20px;
   border: none;
-  margin-bottom: 35px;
+  margin-bottom: 19px;
 }
 
 .info__input:last-child {
   margin-bottom: 0;
 }
 
-.fieldset__date-input {
-  position: relative;
-  width: 135px;
-  height: 52px;
-}
 
-.fieldset__date-label {
+.info__date-label {
   position: relative;
   appearance: none;
   -webkit-appearance: none;
-}
-
-
-.fieldset__firstname-label,
-.fieldset__surname-label,
-.fieldset__phone-label,
-.fieldset__mail-label {
-  position: relative;
-  display: flex;
-  gap: 35px;
-}
-
-.fieldset__firstname-label::before,
-.fieldset__surname-label::before,
-.fieldset__phone-label::before,
-.fieldset__mail-label::before {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #fff;
 }
 
 .entertainment {
@@ -205,12 +184,13 @@
 
 .entertainment__label {
   position: relative;
+  margin-right: auto;
   padding-left: 39px;
   margin-bottom: 22px;
   font-size: 22px;
   line-height: 25px;
-  font-weight: 400;
   cursor: pointer;
+  width: auto;
 }
 
 .entertainment__label:last-child {
@@ -244,8 +224,7 @@
   opacity: 0;
 }
 
-.entertainment__checkbox_type_radio:after {
-  top: 5px;
+.entertainment__checkbox_type_radio:checked:after {
   width: 17px;
   height: 17px;
   border-radius: 50%;

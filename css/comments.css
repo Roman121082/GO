@@ -1,0 +1,45 @@
+.comments__item {
+  margin-bottom: 50px;
+  height: 319px;
+}
+
+.comments__item:last-child {
+  margin-bottom: 0;
+}
+
+.container-comments {
+  padding: 0 100px;
+}
+
+.article__img-box {
+  width: 280px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  margin-bottom: 11px;
+}
+
+.article__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.article__figure {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.article__figcaption {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+
+.comments__text {
+  font-size: 20px;
+  line-height: 28px;
+  padding-top: 53px;
+}

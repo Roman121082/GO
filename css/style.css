@@ -5,6 +5,7 @@
 @import "hall.css";
 @import "booking.css";
 @import "about.css";
+@import "comments.css";
 @import "faq.css";
 @import "footer.css";
 @import "copyright.css";
@@ -83,6 +84,19 @@ iframe {
   transform: scale(0);
 }
 
+.section {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.article {
+  display: flex;
+}
 
 /*
 Пример контейнера
