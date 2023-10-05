@@ -10,7 +10,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  align-items: center;
   margin-bottom: 60px;
 }
 
@@ -28,16 +28,15 @@
 }
 
 .booking__label {
-  display: flex;
-  width: 250px;
-  margin-right: 60px;
   position: relative;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
+  min-width: 250px;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
   font-weight: 700;
   color: #000;
   z-index: 10;
@@ -52,11 +51,9 @@
 }
 
 .booking__radio {
-  appearance: none;
+
   -webkit-appearance: none;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 40px;
@@ -69,7 +66,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  min-width: 250px;
   height: 55px;
   background-color: #fff;
   border-radius: 8px;
@@ -78,6 +75,20 @@
 
 .booking__radio:checked:before {
   background-color: #e5abf3;
+}
+
+.booking__radio:hover:before {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.booking__radio:focus:before {
+  border: 3px solid #640AA3;
+}
+
+.booking__radio:active:before {
+  background-color: #6C0287;
+  border: 3px solid #fff;
 }
 
 .booking__legend {
@@ -113,7 +124,7 @@
 .info__fieldset {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  min-width: 300px;
 }
 
 .info__date {
@@ -161,6 +172,9 @@
   margin-bottom: 0;
 }
 
+.info__input:focus {
+  border: 2px solid #CD06FF;
+}
 
 .info__date-label {
   position: relative;
@@ -190,7 +204,6 @@
   font-size: 22px;
   line-height: 25px;
   cursor: pointer;
-  width: auto;
 }
 
 .entertainment__label:last-child {

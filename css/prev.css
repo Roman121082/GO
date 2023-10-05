@@ -14,6 +14,7 @@
   height: 762px;
   bottom: 0;
   right: 15px;
+  z-index: 1;
 }
 
 .prev__title {
@@ -41,11 +42,14 @@
   bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
 }
 
 .prev-info {
   display: flex;
+  position: relative;
   margin-bottom: 150px;
+  z-index: 5;
 }
 
 .prev-info__list {
@@ -57,7 +61,7 @@
   flex-direction: column;
   margin-right: 40px;
   text-align: center;
-
+  justify-content: flex-end;
 }
 
 .prev-info__item:last-child {
@@ -65,16 +69,18 @@
 }
 
 .prev-info__title {
-  text-transform: uppercase;
   font-weight: 900;
   color: #CD06FF;
   margin-bottom: 28px;
+}
+
+.prev-info__title_type_numeric {
   font-size: 100px;
 }
 
-.prev-info__title-equipment {
+.prev-info__title_type_text {
   font-size: 75px;
-  padding-top: 28px;
+  font-variant: small-caps;
 }
 
 .prev-info__text {

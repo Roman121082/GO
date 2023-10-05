@@ -17,6 +17,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -47,6 +48,7 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+  transition: all 0.3s;
 }
 
 a {
@@ -98,6 +100,10 @@ iframe {
   display: flex;
 }
 
+input {
+  border: none;
+}
+
 /*
 Пример контейнера
 
@@ -106,9 +112,6 @@ iframe {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
-
-
-
 
 .section__title {
   margin: 0 0 40px 0;
@@ -121,28 +124,56 @@ iframe {
 }
 
 .button {
-  display: flex;
-  padding: 16px 50px;
-  font-size: 22px;
-  line-height: 28px;
+  position: relative;
   font-weight: 700;
   border-radius: 10px;
   text-transform: uppercase;
+  z-index: 10;
 }
 
 .button_color_violet {
+  display: inline-block;
   background-color: #6C0287;
   padding: 25px 70px;
   font-size: 26px;
   line-height: 30px;
   color: #fff;
-  margin-left: 0;
   margin: 0 auto 0 0;
+}
+
+.button_color_violet:hover {
+  background-color: #840AA3;
+}
+
+.button_color_violet:focus {
+  background-color: #840AA3;
+}
+
+.button_color_violet:active {
+  background-color: #640AA3;
 }
 
 .button_color_white {
   background-color: #fff;
+  border: 3px solid #440F51;
+  padding: 16px 50px;
+  font-size: 22px;
+  line-height: 28px;
   color: #6C0287;
-  margin-right: 0;
-  margin-left: auto;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+.button_color_white:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.button_color_white:focus {
+  background-color: #fff;
+  border: 3px solid #6C0287;
+}
+
+.button_color_white:active {
+  background-color: #EADEED;
 }
