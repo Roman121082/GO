@@ -101,8 +101,9 @@ iframe {
 }
 
 input {
-  border: none;
+  outline: none;
 }
+
 
 /*
 Пример контейнера

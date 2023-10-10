@@ -43,7 +43,36 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
+  outline: 1px solid transparent;
+  max-height: 97px;
 }
+
+.prev__arrow-link svg {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.prev__arrow-link svg:hover {
+  color: #440F51;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.prev__arrow-link:focus {
+  outline-color: #CD06FF;
+  outline-offset: 1px;
+}
+
+.prev__arrow-link svg:active {
+  color: #fff;
+  background-color: #CD06FF;
+  transition: all 0.3s;
+}
+
+.prev__arrow-link:active circle {
+  stroke: #CD06FF;
+}
+
 
 .prev-info {
   display: flex;
