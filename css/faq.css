@@ -39,13 +39,13 @@
   color: #440F51;
 }
 
-.faq__item-button_color_purple {
-  color: #440F51;
-}
-
 .faq__item-button_color_purple:hover {
   color: #fff;
   background-color: #440F51;
+}
+
+.faq__item-button_color_white:hover circle {
+  color: #440F51;
 }
 
 .faq__item-button_color_white {
@@ -55,10 +55,6 @@
 .faq__item-button_color_white:hover {
   color: #440F51;
   background-color: #fff;
-}
-
-.faq__item-button:active .path1 {
-  display: none;
 }
 
 .faq__item-text {
