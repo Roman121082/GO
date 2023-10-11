@@ -19,6 +19,11 @@
   background-position: 0 0;
 }
 
+.price-list__item:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+
 .price-list__item_bg_vr {
   background-image: url("../images/price-list/01.jpg");
 }

@@ -140,6 +140,7 @@ input {
   line-height: 30px;
   color: #fff;
   margin: 0 auto 0 0;
+  transition: all 0.3s ease-in;
 }
 
 .button_color_violet:hover {
