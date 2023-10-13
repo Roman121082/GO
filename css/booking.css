@@ -40,7 +40,6 @@
   font-weight: 700;
   color: #000;
   z-index: 10;
-  transition: all 0.3s ease-in;
 }
 
 .booking__label:checked:before {
@@ -59,7 +58,6 @@
   line-height: 40px;
   font-weight: 700;
   color: #000;
-  transition: all 0.3s ease-in;
 }
 
 .booking__radio::before {
@@ -254,7 +252,6 @@
   left: 0px;
   width: 25px;
   height: 25px;
-  transition: all 0.3s ease-in;
 }
 
 .entertainment__checkbox_type_radio:focus::before {

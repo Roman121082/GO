@@ -174,8 +174,14 @@ input {
 .button_color_white:focus {
   background-color: #fff;
   border: 3px solid #6C0287;
+  outline: none;
 }
 
 .button_color_white:active {
   background-color: #EADEED;
+  border: 3px solid #440F51;
+}
+
+.footer {
+  padding-bottom: 10px;
 }

@@ -8,3 +8,8 @@
 .copyright__text {
   white-space: pre-line;
 }
+
+.copyright__mail:hover {
+  color: #6C0287;
+  transition: color 0.3s ease-in;
+}

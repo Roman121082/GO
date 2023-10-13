@@ -1,5 +1,7 @@
 .footer {
-  padding-bottom: 10px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+
+
 }
 
 .contacts {
@@ -54,6 +56,11 @@
   color: inherit;
 }
 
+.link:hover {
+  color: #6C0287;
+  transition: color 0.3s ease-in;
+}
+
 .footer__social-list {
   height: 50px;
 }
@@ -62,8 +69,6 @@
   margin-right: 26px;
   display: inline-block;
   text-align: center;
-  width: 50px;
-  height: 50px;
 }
 
 .footer__social-item:last-child {
@@ -71,7 +76,15 @@
 }
 
 .footer__social-link {
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+  width: 50px;
+  height: 50px;
+}
+
+.footer__social-link:hover {
+  color: #CD06FF;
+  transition: color 0.3s ease-in;
 }

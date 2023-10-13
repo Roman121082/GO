@@ -21,6 +21,17 @@
   background-repeat: no-repeat;
 }
 
+.halls__item:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.halls__item:hover .halls__link {
+  color: #000;
+  transition: color 0.3s ease-in;
+}
+
 .halls__item_theme_vibes {
   background-image: url("../images/hall/vibes.jpg");
 }

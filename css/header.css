@@ -23,10 +23,17 @@
 .header__list {
   display: flex;
   margin-right: 97px;
+
 }
 
 .header__item {
   padding-right: 40px;
+}
+
+.header__link:hover {
+  color: #6C0287;
+  transition: color 0.3s ease-in;
+  text-decoration: underline;
 }
 
 .header__item:last-child {
