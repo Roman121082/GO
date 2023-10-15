@@ -87,11 +87,13 @@
 
 .booking__radio:focus:before {
   border: 3px solid #640AA3;
+  transition: border 0.3s ease-in;
 }
 
 .booking__radio:active:before {
   background-color: #6C0287;
   border: 3px solid #fff;
+  transition: all 0.3s ease-in;
 }
 
 .booking__legend {

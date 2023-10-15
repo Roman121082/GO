@@ -24,7 +24,7 @@
 .halls__item:hover {
   opacity: 0.7;
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
 }
 
 .halls__item:hover .halls__link {
