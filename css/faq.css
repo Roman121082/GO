@@ -12,45 +12,51 @@
 }
 
 .faq__item {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 70px;
-  margin-bottom: 20px;
-  line-height: 46px;
-  cursor: pointer;
   font-weight: 700;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .faq__item-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 70px;
+  line-height: 46px;
+}
+
+.faq__item-svg {
   border-radius: 50%;
   width: 46px;
   max-height: 46px;
   line-height: 1;
   overflow: hidden;
   color: #440F51;
+  justify-content: flex-end;
 }
 
 .faq__item:active .path1 {
   display: none;
 }
 
-.faq__item-button_color_purple {
+.faq__item-svg_color_purple {
   color: #440F51;
 }
 
-.faq__item:nth-child(odd):hover .faq__item-button_color_purple {
+.faq__item:nth-child(odd):hover .faq__item-svg_color_purple {
   color: #fff;
   background-color: #440F51;
+  transition: all 0.5s ease-in;
 }
 
-.faq__item-button_color_white {
+.faq__item-svg_color_white {
   color: #fff;
 }
 
-.faq__item:nth-child(even):hover .faq__item-button_color_white {
+.faq__item:nth-child(even):hover .faq__item-svg_color_white {
   color: #440F51;
   background-color: #fff;
+  transition: all 0.5s ease-in;
 }
 
 .faq__item-text {
