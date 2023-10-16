@@ -29,7 +29,12 @@
 }
 
 .price-list__item_bg_audio {
+  transform: translateY(70px);
   background-image: url("../images/price-list/02.jpg");
+}
+
+.price-list__item_bg_audio:hover {
+  transform: translateY(70px) scale(1.1);
 }
 
 .price-list__item_bg_karaoke {
@@ -41,6 +46,12 @@
 }
 
 .price-list__item_bg_films {
+  background-image: url("../images/price-list/05.jpg");
+  transform: translateY(70px);
+}
+
+.price-list__item_bg_films:hover {
+  transform: translateY(70px) scale(1.1);
   background-image: url("../images/price-list/05.jpg");
 }
 
