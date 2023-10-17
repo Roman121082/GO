@@ -46,7 +46,7 @@
 
 .blockquote__paragraph:after {
   content: " ”";
-  color: #6C0287;
+  color: var(--hover-color);
   font-weight: 900;
   width: 39px;
   height: 35px;
@@ -55,7 +55,7 @@
 .blockquote__paragraph::before {
   content: "“";
   position: absolute;
-  color: #6C0287;
+  color: var(--hover-color);
   font-weight: 900;
   top: -8px;
   left: 0;

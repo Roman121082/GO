@@ -31,7 +31,7 @@
 }
 
 .header__link:hover {
-  color: #6C0287;
+  color: var(--hover-color);
   transition: color 0.3s ease-in;
   text-decoration: underline;
 }
@@ -46,21 +46,21 @@
   text-transform: uppercase;
   font-weight: 700;
   padding: 13px 29px;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--main-color);
   border-radius: 10px;
 }
 
 .header__button:hover {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--hover-color);
+  border: 3px solid var(--hover-color);
 }
 
 .header__button:focus {
-  background-color: #6C0287;
-  border: 3px solid #6C0287;
+  background-color: var(--hover-color);
+  border: 3px solid var(--hover-color);
 }
 
 .header__button:active {
-  background-color: #640AA3;
+  background-color: var(--main-color);
   border: 3px solid #000;
 }

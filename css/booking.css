@@ -1,5 +1,5 @@
 .booking {
-  background-color: #440F51;
+  background-color: var(--background-color);
 }
 
 .booking__form {
@@ -70,18 +70,18 @@
   background-color: #fff;
   border-radius: 8px;
   z-index: -1;
-  border: 3px solid #440F51;
+  border: 3px solid var(--background-color);
 }
 
 .booking__radio:checked:before {
   background-color: #e5abf3;
-  border: 3px solid #440F51;
+  border: 3px solid var(--background-color);
   transition: all 0.3s ease-in;
 }
 
 .booking__radio:hover:before {
   background-color: #EADEED;
-  border: 3px solid #440F51;
+  border: 3px solid var(--background-color);
   transition: all 0.3s ease-in;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .booking__radio:active:before {
-  background-color: #6C0287;
+  background-color: var(--hover-color);
   border: 3px solid #fff;
   transition: all 0.3s ease-in;
 }
@@ -158,7 +158,7 @@
 
 .info__date-input:last-child {
   margin-right: 0;
-  border: 2px solid #440F51;
+  border: 2px solid var(--background-color);
 }
 
 .info__date-lable {
@@ -170,7 +170,7 @@
   font-size: 18px;
   line-height: 28px;
   padding: 12px 20px;
-  border: 2px solid #440F51;
+  border: 2px solid var(--background-color);
   margin-bottom: 19px;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .info__input:focus {
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--main-color);
   transition: all 0.3s ease-in;
 }
 
@@ -248,7 +248,7 @@
 .entertainment__checkbox:focus::before {
   content: '';
   position: absolute;
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-color);
   outline-offset: 2px;
   top: 0px;
   left: 0px;
@@ -259,7 +259,7 @@
 .entertainment__checkbox_type_radio:focus::before {
   content: '';
   position: absolute;
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--main-color);
   outline-offset: 2px;
   top: 0px;
   left: 0px;

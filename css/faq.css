@@ -32,7 +32,7 @@
   max-height: 46px;
   line-height: 1;
   overflow: hidden;
-  color: #440F51;
+  color: var(--background-color);
   justify-content: flex-end;
 }
 
@@ -41,12 +41,12 @@
 }
 
 .faq__item-svg_color_purple {
-  color: #440F51;
+  color: var(--background-color);
 }
 
 .faq__item:nth-child(odd):hover .faq__item-svg_color_purple {
   color: #fff;
-  background-color: #440F51;
+  background-color: var(--background-color);
   transition: all 0.5s ease-in;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .faq__item:nth-child(even):hover .faq__item-svg_color_white {
-  color: #440F51;
+  color: var(--background-color);
   background-color: #fff;
   transition: all 0.5s ease-in;
 }
@@ -65,7 +65,7 @@
 }
 
 .faq__item:nth-child(even) {
-  background-color: #440F51;
+  background-color: var(--background-color);
   color: #fff;
 }
 

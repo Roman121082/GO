@@ -55,23 +55,23 @@
 }
 
 .prev__arrow-link svg:hover {
-  color: #440F51;
+  color: var(--background-color);
   background-color: #fff;
   transition: background-color 0.3s ease-in;
 }
 
 .prev__arrow-link:focus {
-  outline-color: #CD06FF;
+  outline-color: var(--main-color);
   outline-offset: 1px;
 }
 
 .prev__arrow-link svg:active {
   color: #fff;
-  background-color: #CD06FF;
+  background-color: var(--main-color);
 }
 
 .prev__arrow-link:active circle {
-  stroke: #CD06FF;
+  stroke: var(--main-color);
 }
 
 
@@ -100,7 +100,7 @@
 
 .prev-info__title {
   font-weight: 900;
-  color: #CD06FF;
+  color: var(--main-color);
   margin-bottom: 28px;
 }
 

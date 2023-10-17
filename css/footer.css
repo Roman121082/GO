@@ -1,7 +1,5 @@
 .footer {
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
-
-
 }
 
 .contacts {
@@ -57,7 +55,7 @@
 }
 
 .link:hover {
-  color: #6C0287;
+  color: var(--hover-color);
   transition: color 0.3s ease-in;
 }
 
@@ -85,6 +83,6 @@
 }
 
 .footer__social-link:hover {
-  color: #CD06FF;
+  color: var(--main-color);
   transition: color 0.3s ease-in;
 }

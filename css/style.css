@@ -1,3 +1,4 @@
+@import "var.css";
 @import "normalize.css";
 @import "header.css";
 @import "prev.css";
@@ -134,7 +135,7 @@ input {
 
 .button_color_violet {
   display: inline-block;
-  background-color: #6C0287;
+  background-color: var(--hover-color);
   padding: 25px 70px;
   font-size: 26px;
   line-height: 30px;
@@ -156,31 +157,31 @@ input {
 
 .button_color_white {
   background-color: #fff;
-  border: 3px solid #440F51;
+  border: 3px solid var(--background-color);
   padding: 16px 50px;
   font-size: 22px;
   line-height: 28px;
-  color: #6C0287;
+  color: var(--hover-color);
   left: 100%;
   transform: translateX(-100%);
 }
 
 .button_color_white:hover {
   background-color: #EADEED;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--hover-color);
   transition: all 0.3s ease-in;
 }
 
 .button_color_white:focus {
   background-color: #fff;
-  border: 3px solid #6C0287;
+  border: 3px solid var(--hover-color);
   outline: none;
   transition: all 0.3s ease-in;
 }
 
 .button_color_white:active {
   background-color: #EADEED;
-  border: 3px solid #440F51;
+  border: 3px solid var(--background-color);
   transition: all 0.3s ease-in;
 }
 
