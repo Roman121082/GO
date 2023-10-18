@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: var(--footer-gradient);
 }
 
 .contacts {

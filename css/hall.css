@@ -12,6 +12,7 @@
 }
 
 .halls__item {
+  position: relative;
   display: flex;
   width: 580px;
   padding: 135px 0;
@@ -19,12 +20,11 @@
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
+  transition: all 0.3s ease-in;
 }
 
 .halls__item:hover {
-  opacity: 0.7;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in;
+  filter: brightness(1.5);
 }
 
 .halls__item:hover .halls__link {
@@ -57,4 +57,11 @@
   line-height: 80px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.halls__link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
 }

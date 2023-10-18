@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   font-size: 20px;
-  background-color: #1b1a1b;
+  background-color: var(--body-backgraundcolor);
   color: #ffffff;
   font-weight: 400;
 }

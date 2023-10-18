@@ -27,17 +27,50 @@
 }
 
 .header__item {
-  padding-right: 40px;
+  margin-right: 40px;
+}
+
+.header__link {
+  transition: color 0.3s ease-in;
+  position: relative;
 }
 
 .header__link:hover {
   color: var(--hover-color);
-  transition: color 0.3s ease-in;
-  text-decoration: underline;
+}
+
+.header__link:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  width: 0;
+  height: 3px;
+  background-color: var(--hover-color);
+  transition: width 0.3s ease-in;
+}
+
+.header__link::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 24px;
+  width: 0;
+  height: 3px;
+  background-color: var(--hover-color);
+  transition: width 0.3s ease-in;
+}
+
+.header__link:hover::before {
+  width: 50%;
+}
+
+.header__link:hover::after {
+  width: 50%;
 }
 
 .header__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .header__button {

@@ -2,4 +2,7 @@
   --main-color: #CD06FF;
   --hover-color: #6C0287;
   --background-color: #440F51;
+  --body-backgraundcolor: #1b1a1b;
+  --comments-gradiet: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.0) 0%, rgba(108, 2, 135, 0.5) 100%);
+  --footer-gradient: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
