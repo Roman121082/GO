@@ -4,6 +4,7 @@
 @import "prev.css";
 @import "price.css";
 @import "hall.css";
+@import "halls.css";
 @import "booking.css";
 @import "about.css";
 @import "comments.css";
@@ -72,6 +73,7 @@ fieldset {
   margin: 0;
   padding: 0;
   border: none;
+  text-align: center;
 }
 
 iframe {
