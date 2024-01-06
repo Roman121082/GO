@@ -37,6 +37,9 @@
 
   <div class="container">
     <header class="header">
+      <button type="button" class="menu-burger">
+        <img class="menu-burger" src="./images/icon/menu-burger.svg" alt="">
+      </button>
       <a class="header__logo" href="!#">
         <img class="header__img" src="images/favicon/logo.svg" alt="">
       </a>
@@ -58,29 +61,37 @@
             <a class="header__link" href="#contacts">Контакты</a>
           </li>
         </ul>
-        <button type="button" class="header__button">Заказать звонок</button>
       </nav>
+      <button type="button" class="header__button">Заказать звонок</button>
     </header>
   </div>
 
   <main>
     <div class="container">
-      <a href="" class="halls-link">
-        Вернуться назад
-      </a>
+      <div class="back-box">
+        <a href="index.html" class="back-halls__link">
+          <img class="back-halls__arrow" src="./images/icon/arrow-back.svg" alt="">
+          Вернуться назад
+        </a>
+      </div>
+
     </div>
     <section class="section prev-halls">
-      <img class="prev-halls__img" src="./images/vibes/prev.jpg" alt="">
-      <p class="prev-halls__text">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилеваям узыка,
-        кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и
-        устройте большую вечеринку!</p>
+      <div class="container">
+        <div class="prev-halls__bg prev-halls__bg_hall_vibes">
+          <h1 class="prev-halls__title">
+            80’s vibes
+          </h1>
+        </div>
+        <p class="prev-halls__text">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилеваям узыка,
+          кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и
+          устройте большую вечеринку!</p>
+      </div>
     </section>
-
-
 
     <section class="section hall-about">
       <div class="container">
-        <h2 class="hall-about__title">Что есть в комнате?</h2>
+        <h2 class="section__title section__title_theeme_hall">Что есть в комнате?</h2>
         <div class="hall-about__box">
           <img class="hall-about__img" src="./images/vibes/about-img.jpg" alt="">
           <div class="hall-about__text-box">
@@ -97,20 +108,20 @@
 
     <section class="section others-halls">
       <div class="container">
-        <h2 class="others-halls__title">Другие комнаты</h2>
+        <h2 class="section__title">Другие комнаты</h2>
         <ul class="others-halls__list">
           <li class="others-halls__item">
-            <a class="others-halls__link" href="">
+            <a class="others-halls__link" href="wildwest.html">
               <img class="others-halls__img" src="./images/hall/wild-west.jpg" alt="">
             </a>
           </li>
           <li class="others-halls__item">
-            <a class="others-halls__link" href="">
+            <a class="others-halls__link" href="starwars.html">
               <img class="others-halls__img" src="./images/hall/star-wars.jpg" alt="">
             </a>
           </li>
           <li class="others-halls__item">
-            <a class="others-halls__link" href="">
+            <a class="others-halls__link" href="neon.html">
               <img class="others-halls__img" src="./images/hall/neon-style.jpg" alt="">
             </a>
           </li>

@@ -1,19 +1,127 @@
-.prev-halls__img {
+@media(max-width: 1920px) {
+  .prev-halls__bg {
+    font-size: calc(30px + (90 - 30) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+
+@media(max-width: 1440px) {
+  .prev-halls__text {
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(24px + (36 - 24) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media(max-width: 1440px) {
+  .hall-about__box {
+    gap: calc(15px + (80 - 15) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media(max-width: 1440px) {
+  .hall-about__text-box {
+    font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(16px + (28 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media(max-width: 1440px) {
+  .back-halls__link {
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(28px + (28 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+.prev-halls__bg {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 750px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.prev-halls__title {
+  text-transform: uppercase;
+}
+
+.prev-halls__bg_hall_vibes {
+  background-image: url('../images/vibes/prev.jpg');
+}
+
+.prev-halls__bg_hall_starwars {
+  background-image: url('../images/starwars/prev.jpg');
+}
+
+.prev-halls__bg_hall_wildwest {
+  background-image: url('../images/wildwest/prev.jpg');
+}
+
+
+.prev-halls__bg_hall_neon {
+  background-image: url('../images/neon/prev.jpg');
 }
 
 .prev-halls__text {
   text-align: center;
   white-space: pre-line;
+  font-weight: 700;
+}
+
+.back-box {
+  display: flex;
+
+}
+
+
+.back-halls__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .hall-about__box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+
+@media(max-width: 1440px) {
+  .prev-halls__bg {
+    margin-bottom: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+
+@media(max-width: 600px) {
+  .hall-about__box {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 1fr 100%;
+  }
+}
+
+
+
+.hall-about__text {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.hall-about__text:last-child {
+  padding-bottom: 0;
 }
 
 .others-halls__list {
   display: flex;
   gap: 20px;
+}
+
+@media(max-width: 600px) {
+  .others-halls__list {
+    flex-direction: column;
+  }
 }

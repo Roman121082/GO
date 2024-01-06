@@ -82,3 +82,33 @@
 .faq__item-button_color_white {
   color: #fff;
 }
+
+@media(max-width: 500px) {
+  .faq__item {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .faq__item-button {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 10px;
+    align-items: center;
+    text-align: left;
+
+  }
+
+  .faq__item-svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq__item {
+    line-height: 30px;
+  }
+
+  .contacts__box {
+    flex-direction: column;
+  }
+
+}

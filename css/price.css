@@ -1,23 +1,52 @@
+@media(min-width: 1440px) {
+  .halls__item {
+    padding-top: calc(50px + (94 - 50) * ((100vw - 320px) / (1440 - 320)));
+    padding-bottom: calc(50px + (94 - 50) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  .halls__link {
+    font-size: calc(26px + (70 - 26) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(34px + (80 - 34) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media(max-width: 1440px) {
+  .halls__item {
+    padding-top: calc(50px + (94 - 50) * ((100vw - 320px) / (1440 - 320)));
+    padding-bottom: calc(50px + (94 - 50) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  .halls__link {
+    font-size: calc(26px + (70 - 26) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(34px + (80 - 34) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+}
+
+
+
+
+
+
+
 .price-list__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   row-gap: 40px;
   column-gap: 20px;
-  grid-template-columns: 40px;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   padding-bottom: 70px;
 }
 
 .price-list__item {
-  display: flex;
-  width: 380px;
+  display: grid;
   padding: 166px 40px 6px;
   font-size: 20px;
   line-height: 28px;
   white-space: pre-line;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
 }
 
 .price-list__item:hover {
@@ -58,4 +87,55 @@
 
 .price-list__item_bg_playStation {
   background-image: url("../images/price-list/06.jpg");
+}
+
+@media(max-width: 1250px) {
+
+  .price-list__list {
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+}
+
+
+
+@media(max-width: 1000px) {
+  .price-list__list {
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+@media(max-width: 1000px) {
+
+  .price-list__list {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+
+  .price-list__item_bg_audio {
+    transform: translateY(0);
+  }
+
+  .price-list__item_bg_films {
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 730px) {
+
+  .price-list__list {
+    gap: 10px;
+  }
+
+  .price-list__item {
+    padding: 30px 17px 10px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
 }

@@ -37,6 +37,9 @@
 
   <div class="container">
     <header class="header">
+      <button type="button" class="menu-burger">
+        <img class="menu-burger" src="./images/icon/menu-burger.svg" alt="">
+      </button>
       <a class="header__logo" href="!#">
         <img class="header__img" src="images/favicon/logo.svg" alt="">
       </a>
@@ -58,8 +61,8 @@
             <a class="header__link" href="#contacts">Контакты</a>
           </li>
         </ul>
-        <button type="button" class="header__button">Заказать звонок</button>
       </nav>
+      <button type="button" class="header__button">Заказать звонок</button>
     </header>
   </div>
 
@@ -151,6 +154,7 @@
             <label class="booking__label">
               <input class="booking__radio" type="radio" name="hall" value="neon-style">neon style
             </label>
+
           </fieldset>
 
           <div class="booking-container">
@@ -220,8 +224,12 @@
               <legend class="booking__legend">
                 Выбери дату и время
               </legend>
+
+
+
               <div class="info__box">
                 <div class="info__fieldset">
+
                   <div class="info__date">
                     <label class="info__date-label" for="date"></label>
                     <input class="info__date-input" type="date" id="date" required>
@@ -229,28 +237,36 @@
                     <label class="info__date-label"></label>
                     <input class="info__date-input" type="time" required>
                   </div>
-                  <label class="info__label" for="persons"></label>
+                </div>
+
+                <div class="info-name">
+                  <label class="info__label info__label-name" for="firstname">Имя</label>
+                  <input class="info__input" type="text" name="firstname" id="firstname" required>
+                </div>
+
+                <div class="info-surname">
+                  <label class="info__label info__label-surname" for="surname">Фамилия</label>
+                  <input class="info__input" type="text" name="surname" id="surname" required>
+                </div>
+
+                <div class="phone">
+                  <label class="info__label info__label-phone" for="phone">Телефон</label>
+                  <input class="info__input" type="tel" name="phone" id="phone" required placeholder="+7-___-___-__-__"
+                    pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+                </div>
+
+                <div class="mail">
+                  <label class="info__label info__label-mail" for="mail">E-mail</label>
+                  <input class="info__input" type="email" name="mail" id="mail" required>
+                </div>
+
+                <div class="persons">
+                  <label class="info__label info__label-persons" for="persons"></label>
                   <input class="info__input" type="text" name="persons" id="persons" placeholder="Сколько человек"
                     required>
                 </div>
-
-                <div class="info__fieldset">
-                  <label class="info__label" for="firstname">Имя</label>
-                  <input class="info__input" type="text" name="firstname" id="firstname" required>
-
-                  <label class="info__label" for="surname">Фамилия</label>
-                  <input class="info__input" type="text" name="surname" id="surname" required>
-                </div>
-                <div class="info__fieldset">
-                  <label class="info__label" for="phone">Телефон</label>
-                  <input class="info__input" type="tel" name="phone" id="phone" required placeholder="+7-___-___-__-__"
-                    pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
-
-                  <label class="info__label" for="mail">E-mail</label>
-                  <input class="info__input" type="email" name="mail" id="mail" required>
-                </div>
-              </div>
             </fieldset>
+
             <button class="button button_color_white" type="submit">Забронировать</button>
           </div>
         </form>
@@ -272,19 +288,20 @@
                 и радовать Вас топовыми игровыми разработками
                 со всего мира.</p>
             </div>
-            <blockquote class="blockquote">
-              <p class="blockquote__paragraph">GAME OVER -
-                это место
-                незабываемых
-                впечатлений</p>
-              <div class="blockquote__author">
-                <img class="blockquote__img" src="./images/boss.jpeg" alt="">
-                <p class="blockquote__author-paragraph">Аркадий Абакшин,
-                  создатель игровой
-                  индустрии GAME OVER</p>
-              </div>
-            </blockquote>
           </div>
+          <blockquote class="blockquote">
+            <p class="blockquote__paragraph">GAME OVER &mdash;
+              это место
+              незабываемых
+              впечатлений</p>
+            <div class="blockquote__author">
+              <img class="blockquote__img" src="./images/boss.jpeg" alt="">
+              <p class="blockquote__author-paragraph">Аркадий Абакшин,
+                создатель игровой
+                индустрии GAME OVER</p>
+            </div>
+          </blockquote>
+
         </div>
       </div>
     </section>
