@@ -24,11 +24,6 @@
 }
 
 
-
-
-
-
-
 .price-list__list {
   display: grid;
   row-gap: 40px;
@@ -108,7 +103,19 @@
 
 
 
-@media(max-width: 1000px) {
+@media(max-width: 1024px) {
+
+  .price-list__item {
+    padding: 114px 20px 5px;
+  }
+
+}
+
+@media(max-width: 768px) {
+
+  .price-list__item {
+    padding: 133px 30px 12px;
+  }
 
   .price-list__list {
     gap: 20px;
@@ -116,26 +123,12 @@
     grid-template-rows: repeat(3, 1fr);
   }
 
-
   .price-list__item_bg_audio {
     transform: translateY(0);
   }
 
   .price-list__item_bg_films {
     transform: translateY(0);
-  }
-}
-
-@media(max-width: 730px) {
-
-  .price-list__list {
-    gap: 10px;
-  }
-
-  .price-list__item {
-    padding: 30px 17px 10px;
-    font-size: 10px;
-    line-height: 14px;
   }
 
 }

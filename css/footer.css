@@ -111,23 +111,23 @@
   }
 
   .address__text {
-    padding-left: 0;
+    /* padding-left: 0; */
   }
 
-  /* .address__text_location {
+  .address__text_location {
     background-size: 26px;
-    background-position: top left 85px;
+    background-position: top left;
   }
 
   .address__text_phone {
     background-size: 26px;
-    background-position: center left 30px;
+    background-position: center left;
   }
 
   .address__text_mail {
     background-size: 26px;
-    background-position: center left 8px;
-  } */
+    background-position: center left;
+  }
 
 
 }
@@ -260,6 +260,7 @@
 
   .address__text_location {
     background-position: top left calc(50px + (85 - 50) * ((100vw - 320px) / (1000 - 320)));
+    ;
   }
 
   .address__text_phone {
@@ -268,7 +269,8 @@
 
   .address__text {
     background-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1000 - 320)));
-    ;
+    /* padding-left: calc(10px + (20 - 10) * ((100vw - 320px) / (1000 - 320))); */
+
   }
 
 }
