@@ -116,24 +116,14 @@ input {
 Чтобы контент не прижимался к краям экрана
 */
 
-@media(max-width: 1440px) {
-  .section__title {
-    font-size: calc(14px + (40 - 14) * ((100vw - 320px) / (1440 - 320)));
-    line-height: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
-  }
-}
-
-
-
-
-
 
 .section__title {
   margin: 0 0 40px 0;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  white-space: pre-line;
+  font-size: 40px;
+  line-height: 50px;
 }
 
 .button {
@@ -199,6 +189,14 @@ input {
     line-height: 30px;
   }
 
+
+  .section__title {
+    margin: 0 0 36px 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+
   .section {
     padding: 35px 0;
   }
@@ -210,6 +208,13 @@ input {
     font-size: 16px;
     line-height: 24px;
   }
+
+  .section__title {
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
 
   .section {
     padding: 30px 0;
@@ -225,6 +230,13 @@ input {
 
   .section {
     padding: 15px 0;
+  }
+
+
+  .section__title {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 18px;
   }
 
 }

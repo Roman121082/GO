@@ -162,8 +162,9 @@
 
 
   .footer__map {
-    width: 100%;
+    width: 688px;
     height: 337px;
+    margin: 0 auto;
   }
 
   .contacts {
