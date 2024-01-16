@@ -1,4 +1,4 @@
-@media(max-width: 1440px) {
+/* @media(max-width: 1440px) {
   .booking__label {
     width: calc(130px + (250 - 130) * ((100vw - 320px) / (1440 - 320)));
     font-size: calc(14px + (30 - 14) * ((100vw - 320px) / (1440 - 320)));
@@ -26,8 +26,7 @@
     font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1440 - 320)));
     line-height: calc(22px + (25 - 22) * ((100vw - 320px) / (1440 - 320)));
   }
-
-}
+} */
 
 .booking {
   background-color: var(--background-color);
@@ -51,16 +50,23 @@
 }
 
 .booking__text {
+  font-size: 24px;
+  line-height: 28px;
   font-weight: 700;
   margin-bottom: 40px;
   text-align: center;
 }
 
 .booking__label {
-  text-align: center;
   position: relative;
   cursor: pointer;
+  width: 250px;
   text-transform: uppercase;
+  font-size: 30px;
+  line-height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
   font-weight: 700;
   color: #000;
   z-index: 10;
@@ -80,15 +86,16 @@
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  font-size: 30px;
+  line-height: 40px;
 }
 
 .booking__radio::before {
   content: '';
   position: absolute;
-  padding-bottom: 1px;
-  top: -8px;
+  top: 0;
   left: 0;
-  min-width: 100%;
+  width: 250px;
   height: 55px;
   background-color: #fff;
   border-radius: 8px;
@@ -341,7 +348,52 @@
   flex-direction: column;
 }
 
+@media(max-width: 1250px) {
+  .booking__label {
+    width: 215px;
+  }
+
+  .booking__radio::before {
+    width: 215px;
+    height: 55px;
+    border-radius: 8px;
+  }
+}
+
+
+@media(max-width: 1100px) {
+  .booking__label {
+    width: 180px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 0;
+    border-radius: 6px;
+  }
+
+  .booking__radio::before {
+    width: 180px;
+    height: 44px;
+    border-radius: 6px;
+  }
+}
+
+
 @media(max-width: 768px) {
+  .booking__label {
+    width: 150px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 0;
+    border-radius: 6px;
+  }
+
+
+  .booking__radio::before {
+    width: 150px;
+    height: 38px;
+    border-radius: 6px;
+  }
+
   .entertainment__fieldset {
     width: 50%;
     margin-bottom: 32px;
@@ -389,6 +441,21 @@
 }
 
 @media(max-width: 500px) {
+
+  .booking__label {
+    width: 130px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 6px 0;
+    border-radius: 4px;
+  }
+
+  .booking__radio::before {
+    width: 130px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
 
   .info__box {
     grid-template-columns: 280px;

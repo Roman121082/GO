@@ -83,6 +83,28 @@
   color: #fff;
 }
 
+@media(max-width: 768px) {
+  .faq__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .faq__item-button {
+    padding: 12px 60px;
+  }
+}
+
+@media(max-width: 600px) {
+  .faq__item {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .faq__item-button {
+    padding: 15px 13px;
+  }
+}
+
 @media(max-width: 500px) {
   .faq__item {
     font-size: 12px;
