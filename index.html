@@ -144,19 +144,17 @@
         <p class="booking__text">Выбери зал</p>
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
           <fieldset class="booking__fieldset">
-            <label class="booking__label">
-              <input class="booking__radio" type="radio" name="hall" value="80-vibes">80's vibes
-            </label>
-            <label class="booking__label">
-              <input class="booking__radio" type="radio" name="hall" value="star-wars">star wars
-            </label>
-            <label class="booking__label">
-              <input class="booking__radio" type="radio" name="hall" value="wild-west">wild west
-            </label>
-            <label class="booking__label">
-              <input class="booking__radio" type="radio" name="hall" value="neon-style">neon style
-            </label>
+            <label class="booking__label">80's vibes</label>
+            <input class="booking__radio" type="radio" name="hall" value="80-vibes">
 
+            <label class="booking__label">star wars</label>
+            <input class="booking__radio" type="radio" name="hall" value="star-wars">
+
+            <label class="booking__label">wild west</label>
+            <input class="booking__radio" type="radio" name="hall" value="wild-west">
+
+            <label class="booking__label">neon style</label>
+            <input class="booking__radio" type="radio" name="hall" value="neon-style">
           </fieldset>
 
           <div class="booking-container">
@@ -231,11 +229,13 @@
                 <div class="info__fieldset">
 
                   <div class="info__date">
+                    <input class="info__date-input" type="text" placeholder="Дата" onfocus="(this.type='date')"
+                      id="date" required>
                     <label class="info__date-label" for="date"></label>
-                    <input class="info__date-input" type="date" id="date" required>
 
                     <label class="info__date-label"></label>
-                    <input class="info__date-input" type="time" required>
+                    <input class="info__date-input" type="text" placeholder="Время" onfocus="(this.type='time')"
+                      required>
                   </div>
                 </div>
 
@@ -360,6 +360,8 @@
         </ul>
       </div>
     </section>
+
+
     <section class="section faq">
       <div class="container">
         <h2 class="section__title">Частые вопросы</h2>

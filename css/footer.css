@@ -87,6 +87,15 @@
   transition: color 0.3s ease-in;
 }
 
+@media(max-width: 1024px) {
+  .footer__map {
+    width: 542px;
+    height: 274px;
+  }
+}
+
+
+
 @media(max-width: 1000px) {
   .contacts {
     justify-content: space-between;
