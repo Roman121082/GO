@@ -1,3 +1,26 @@
+.halls__item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.halls__link {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+
+
+.halls__item {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.halls__link {
+  font-size: 70px;
+  line-height: 80px;
+}
+
+
 @media(min-width: 1440px) {
   .halls__item {
     padding-top: calc(50px + (94 - 50) * ((100vw - 320px) / (1440 - 320)));
@@ -20,7 +43,6 @@
     font-size: calc(26px + (70 - 26) * ((100vw - 320px) / (1440 - 320)));
     line-height: calc(34px + (80 - 34) * ((100vw - 320px) / (1440 - 320)));
   }
-
 }
 
 

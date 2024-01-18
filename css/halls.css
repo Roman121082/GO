@@ -29,6 +29,10 @@
   line-height: 36px;
 }
 
+.others-halls_hall_vibes {
+  background-image: url('../images/hall/vibes.jpg');
+}
+
 .others-halls_hall_wildwest {
   background-image: url('../images/hall/wild-west.jpg');
   background-size: cover;
@@ -163,9 +167,9 @@
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 700px) {
   .hall-about__box {
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: 100%;
     grid-template-rows: 1fr 100%;
   }
 

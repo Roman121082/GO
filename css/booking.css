@@ -21,14 +21,6 @@
 
 
 @media(max-width: 1440px) {
-  /* .booking__label {
-    width: calc(130px + (250 - 130) * ((100vw - 320px) / (1440 - 320)));
-    font-size: calc(14px + (30 - 14) * ((100vw - 320px) / (1440 - 320)));
-    line-height: calc(18px + (40 - 18) * ((100vw - 320px) / (1440 - 320)));
-    padding-top: calc(6px + (10 - 6) * ((100vw - 320px) / (1440 - 320)));
-    padding-bottom: calc(6px + (10 - 6) * ((100vw - 320px) / (1440 - 320)));
-  } */
-
   .booking__text {
     font-size: calc(14px + (30 - 14) * ((100vw - 320px) / (1440 - 320)));
     line-height: calc(24px + (28 - 24) * ((100vw - 320px) / (1440 - 320)));

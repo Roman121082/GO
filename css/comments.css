@@ -130,6 +130,7 @@
 @media(max-width: 500px) {
   .article__figure {
     margin-right: 0;
+    padding-left: 0;
   }
 
   .article {
@@ -151,6 +152,7 @@
   .comments__text {
     font-size: 12px;
     line-height: 16px;
+    margin: 0 auto;
   }
 
   .comments__item {
