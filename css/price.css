@@ -123,8 +123,6 @@
 }
 
 
-
-
 @media(max-width: 1024px) {
 
   .price-list__item {
@@ -159,7 +157,7 @@
 @media(max-width: 500px) {
 
   .price-list__item {
-    padding: 30px 10px 31px;
+    padding: 30px 10px 3px;
     font-size: 10px;
     line-height: 14px;
   }

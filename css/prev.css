@@ -124,7 +124,7 @@
   .prev__title {
     font-size: 120px;
     line-height: 100%;
-    letter-spacing: -10px;
+    letter-spacing: -4px;
     margin-bottom: 20px;
   }
 
@@ -193,7 +193,7 @@
   .prev__title {
     font-size: 86px;
     line-height: 86px;
-    letter-spacing: -10px;
+    letter-spacing: -4px;
   }
 
   .prev__subtitle {
@@ -252,14 +252,11 @@
 
 }
 
-
-
-
 @media(max-width: 560px) {
   .prev__title {
     font-size: 35px;
     line-height: 35px;
-    letter-spacing: -8px;
+    letter-spacing: -3px;
     margin-bottom: 6px;
   }
 
@@ -306,7 +303,7 @@
 
   .prev__img {
     width: 161px;
-    height: 197px;
+    height: 179px;
   }
 
   .button_color_violet {

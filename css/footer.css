@@ -93,9 +93,18 @@
 }
 
 @media(max-width: 1024px) {
+  .footer__social-item svg {
+    width: 40px;
+    height: 40px;
+  }
+
   .footer__map {
     width: 542px;
     height: 274px;
+  }
+
+  .footer__social-list {
+    height: 40px;
   }
 }
 
@@ -122,6 +131,7 @@
   .address__text {
     padding-left: 0;
     background-size: 26px;
+    margin: 0 auto;
   }
 
   .footer__social-list {
@@ -133,16 +143,15 @@
   }
 
   .address__text_location {
-    background-position: top -1px left 73px;
-
+    background-position: top -1px left 34px;
   }
 
   .address__text_phone {
-    background-position: center left 30px;
+    background-position: center left 26px;
   }
 
   .address__text_mail {
-    background-position: center left 5px;
+    background-position: center left 3px;
   }
 
 }
@@ -156,23 +165,23 @@
   .address {
     font-size: 14px;
     line-height: 18px;
+    min-width: 280px;
   }
 
   .address__text_location {
     margin-bottom: 10px;
   }
 
-
   .address__text_location {
-    background-position: top -1px left 103px;
+    background-position: top -1px left 71px;
   }
 
   .address__text_phone {
-    background-position: center left 75px;
+    background-position: center left 50px;
   }
 
   .address__text_mail {
-    background-position: center left 55px;
+    background-position: center left 32px;
   }
 
   .address__text_location {
@@ -215,6 +224,12 @@
 }
 
 @media(max-width: 500px) {
+
+  .footer__social-item svg {
+    width: 30px;
+    height: 30px;
+  }
+
   .contacts {
     margin-bottom: 156px;
     justify-content: space-between;
@@ -241,6 +256,7 @@
 
   .footer__social-list {
     margin-bottom: 35px;
+    height: 30px;
   }
 
   .footer__social-link {
@@ -272,6 +288,10 @@
     margin-bottom: 0;
   }
 
+  .address {
+    margin-bottom: 30px;
+  }
+
 }
 
 @media(max-width: 320px) {
@@ -282,14 +302,14 @@
   }
 
   .address__text_location {
-    background-position: top 1px left 106px;
+    background-position: top 3px left 76px;
   }
 
   .address__text_phone {
-    background-position: center left 83px;
+    background-position: center left 55px;
   }
 
   .address__text_mail {
-    background-position: center left 65px;
+    background-position: center left 40px;
   }
 }
