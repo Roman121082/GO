@@ -166,7 +166,7 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 900px) {
 
   .about__content {
     grid-template-columns: 380px 1fr;
