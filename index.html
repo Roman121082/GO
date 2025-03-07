@@ -1,527 +1,997 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+    <title>GO</title>
 
-  <link href="css/style.css" rel="stylesheet">
-  <title>GO</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon/logo.svg" />
+    <link rel="icon" type="image/png" href="./images/favicon/logo.png" />
 
-  <link rel="icon" type="image/svg+xml" href="./images/favicon/logo.svg">
-  <link rel="icon" type="image/png" href="./images/favicon/logo.png">
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+    />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="./images/favicon/favicon-96x96.png"
+    />
+    <link
+      type="image/png"
+      sizes="120x120"
+      rel="icon"
+      href="./images/favicon/favicon-120x120.png"
+    />
+    <link
+      type="image/png"
+      sizes="192x192"
+      rel="icon"
+      href="./images/favicon/android-icon-192x192.png"
+    />
+    <link
+      type="image/png"
+      sizes="192x192"
+      rel="icon"
+      href="./images/favicon/android-icon-256x256.png"
+    />
 
-  <link type="image/x-icon" rel="shortcut icon" href="./images/favicon/favicon.ico">
-  <link type="image/png" sizes="16x16" rel="icon" href="./images/favicon/favicon-16x16.png">
-  <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon/favicon-32x32.png">
-  <link type="image/png" sizes="96x96" rel="icon" href="./images/favicon/favicon-96x96.png">
-  <link type="image/png" sizes="120x120" rel="icon" href="./images/favicon/favicon-120x120.png">
-  <link type="image/png" sizes="192x192" rel="icon" href="./images/favicon/android-icon-192x192.png">
-  <link type="image/png" sizes="192x192" rel="icon" href="./images/favicon/android-icon-256x256.png">
+    <link
+      sizes="57x57"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      sizes="60x60"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      sizes="72x72"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      sizes="76x76"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      sizes="114x114"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      sizes="120x120"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      sizes="144x144"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      sizes="152x152"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      sizes="180x180"
+      rel="apple-touch-icon"
+      href="./images/favicon/apple-touch-icon-180x180.png"
+    />
 
-  <link sizes="57x57" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-57x57.png">
-  <link sizes="60x60" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-60x60.png">
-  <link sizes="72x72" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-72x72.png">
-  <link sizes="76x76" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-76x76.png">
-  <link sizes="114x114" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-114x114.png">
-  <link sizes="120x120" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-120x120.png">
-  <link sizes="144x144" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-144x144.png">
-  <link sizes="152x152" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-152x152.png">
-  <link sizes="180x180" rel="apple-touch-icon" href="./images/favicon/apple-touch-icon-180x180.png">
+    <link
+      color="#e52037"
+      rel="mask-icon"
+      href="./images/favicon/safari-pinned-tab.svg"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+  </head>
 
-  <link color="#e52037" rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg">
-  <link rel="manifest" href="./images/favicon/site.webmanifest">
-</head>
-
-<body>
-
-  <div class="container">
-    <header class="header">
-      <button type="button" class="menu-burger">
-        <img class="menu-burger" src="./images/icon/menu-burger.svg" alt="">
-      </button>
-      <a class="header__logo" href="!#">
-        <img class="header__img" src="images/favicon/logo.svg" alt="">
-      </a>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#halls">залы</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#about">О нас</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#booking">Бронь</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#comments">отзывы</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button" class="header__button">Заказать звонок</button>
-    </header>
-  </div>
-
-  <main>
-    <section class="section prev">
-      <div class="container prev__container">
-        <img class="prev__img" src="./images/hall/prev.png" alt="">
-        <a class="prev__arrow-link" href="#price-list">
-          <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="48.5" cy="48.5" r="48" stroke="white" />
-            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)"
-              fill="currentColor" />
-            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)"
-              fill="currentColor" />
-          </svg>
-        </a>
-        <h1 class="prev__title">game over</h1>
-        <p class="prev__subtitle">Новый формат игр и отдыха</p>
-        <div class="prev-info">
-          <div class="prev-info__item">
-            <p class="prev-info__title prev-info__title_type_numeric">4</p>
-            <p class="prev-info__text">Тематических
-              зала</p>
-          </div>
-          <div class="prev-info__item">
-            <p class="prev-info__title prev-info__title_type_text">new</p>
-            <p class="prev-info__text">Новейшая
-              аппаратура</p>
-          </div>
-        </div>
-        <a class="button button_color_violet" href="#booking">Забронировать</a>
-      </div>
-
-    </section>
-
-
-    <section class="section price-list" id="price-list">
-      <div class="container">
-        <h2 class="section__title">У нас есть все для классного
-          отдыха с друзьями!</h2>
-        <ul class="price-list__list">
-          <li class="price-list__item price-list__item_bg_vr">VR очки</li>
-          <li class="price-list__item price-list__item_bg_audio">Аудио-система 5.1
-            с отличным звуком
-          </li>
-          <li class="price-list__item price-list__item_bg_karaoke">Караоке (4
-            микрофона)
-          </li>
-          <li class="price-list__item price-list__item_bg_game">Настольные игры</li>
-          <li class="price-list__item price-list__item_bg_films">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
-          </li>
-          <li class="price-list__item price-list__item_bg_playStation">PlayStation 5
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section halls" id="halls">
-      <div class="container">
-        <h2 class="section__title">наши залы</h2>
-        <ul class="halls__list">
-          <li class="halls__item halls__item_theme_vibes"><a class="halls__link" href="vibes.html" target="_blank">80’s
-              vibes</a></li>
-          <li class="halls__item halls__item_theme_starwars"><a class="halls__link" href="starwars.html"
-              target="_blank">Star
-              wars</a></li>
-          <li class="halls__item halls__item_theme_wildwest"><a class="halls__link" href="wildwest.html"
-              target="_blank">Wild
-              west</a></li>
-          <li class="halls__item halls__item_theme_neon"><a class="halls__link" href="neon.html" target="_blank">Neon
-              style</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section booking" id="booking">
-      <div class="container">
-        <h2 class="section__title">Забронировать зал просто</h2>
-        <p class="booking__text">Выбери зал</p>
-        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="booking">
-          <fieldset class="booking__fieldset">
-            <label class="booking__label">80's vibes</label>
-            <input class="booking__radio" type="radio" name="hall" value="80-vibes">
-
-            <label class="booking__label">star wars</label>
-            <input class="booking__radio" type="radio" name="hall" value="star-wars">
-
-            <label class="booking__label">wild west</label>
-            <input class="booking__radio" type="radio" name="hall" value="wild-west">
-
-            <label class="booking__label">neon style</label>
-            <input class="booking__radio" type="radio" name="hall" value="neon-style">
-          </fieldset>
-
-          <div class="booking-container">
-            <fieldset class="entertainment">
-              <legend class="booking__legend">
-                Собери набор развлечений
-              </legend>
-              <fieldset class="entertainment__fieldset">
-                <legend class="entertainment__legend">
-                  Приставка:
-                </legend>
-                <label class="entertainment__label entertainment__label_type_radio">
-                  <input class="entertainment__checkbox entertainment__checkbox_type_radio" type="radio" name="console"
-                    value="play-Station">Play Station
-                </label>
-                <label class="entertainment__label entertainment__label_type_radio">
-                  <input class="entertainment__checkbox entertainment__checkbox_type_radio" type="radio" name="console"
-                    value="sega-Mega">Sega
-                  Mega Drive
-                </label>
-                <label class="entertainment__label entertainment__label_type_radio">
-                  <input class="entertainment__checkbox entertainment__checkbox_type_radio" type="radio" name="console"
-                    value="x-box">X-box One
-                  S
-                </label>
-                <label class="entertainment__label entertainment__label_type_radio">
-                  <input class="entertainment__checkbox entertainment__checkbox_type_radio" type="radio" name="console"
-                    value="dendy">Dendy
-                </label>
-              </fieldset>
-
-              <fieldset class="entertainment__fieldset">
-                <legend class="entertainment__legend">
-                  Настольные игры:
-                </legend>
-                <label class="entertainment__label">
-                  <input class="entertainment__checkbox" type="checkbox" name="game" value="jenga">Jenga
-                </label>
-
-                <label class="entertainment__label">
-                  <input class="entertainment__checkbox" type="checkbox" name="game" value="monopoly">Monopoly
-                </label>
-
-                <label class="entertainment__label">
-                  <input class="entertainment__checkbox" type="checkbox" name="game" value="munchkin">Манчкин
-                </label>
-
-                <label class="entertainment__label">
-                  <input class="entertainment__checkbox" type="checkbox" name="game" value="alias">Alias
-                </label>
-              </fieldset>
-
-              <fieldset class="entertainment__fieldset">
-                <legend class="entertainment__legend">
-                  Дополнительно:
-                </legend>
-                <label class="entertainment__label">
-                  <input class="entertainment__checkbox" type="checkbox" name="additionally" value="Karaoke">Караоке
-                </label>
-
-                <label class="entertainment__label">
-                  <input class="entertainment__checkbox" type="checkbox" name="additionally" value="VR">VR
-                </label>
-              </fieldset>
-            </fieldset>
-            <fieldset class="info">
-              <legend class="booking__legend">
-                Выбери дату и время
-              </legend>
-
-              <div class="info__box">
-                <div class="info__fieldset">
-
-                  <div class="info__date">
-                    <input class="info__date-input" type="text" placeholder="Дата" onfocus="(this.type='date')"
-                      id="date" required>
-                    <label class="info__date-label" for="date"></label>
-
-                    <label class="info__date-label"></label>
-                    <input class="info__date-input" type="text" placeholder="Время" onfocus="(this.type='time')"
-                      required>
-                  </div>
-                  <div class="persons">
-                    <!-- <label class="info__label info__label-persons" for="persons"></label> -->
-                    <input class="info__input" type="text" name="persons" id="persons" placeholder="Сколько человек"
-                      required>
-                  </div>
-                </div>
-
-                <div class="info-name">
-                  <div class="info-name__firstname">
-                    <label class="info__label info__label-name" for="firstname">Имя</label>
-                    <input class="info__input" type="text" name="firstname" id="firstname" required>
-                  </div>
-
-                  <div class="info-name__surname">
-                    <label class="info__label info__label-surname" for="surname">Фамилия</label>
-                    <input class="info__input" type="text" name="surname" id="surname" required>
-                  </div>
-                </div>
-
-                <div class="contact">
-                  <div class="contact-phone">
-                    <label class="info__label info__label-phone" for="phone">Телефон</label>
-                    <input class="info__input" type="tel" name="phone" id="phone" required
-                      placeholder="+7-___-___-__-__" pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
-                  </div>
-
-                  <div class="contact-mail">
-                    <label class="info__label info__label-mail" for="mail">E-mail</label>
-                    <input class="info__input" type="email" name="mail" id="mail" required>
-                  </div>
-
-                </div>
-              </div>
-            </fieldset>
-
-            <button class="button button_color_white" type="submit">Забронировать</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="container">
-        <h2 class="section__title about__title">О нас</h2>
-        <div class="about__content">
-          <img class="about__img" src="./images/about-img.jpg" alt="изображение залов">
-          <div class="about__content-text">
-            <div class="about__text">
-              <p class="about__paragraph">Для наших гостей мы создали концептуально новое
-                игровое пространство выртуальной реальности
-                в центральной части города</p>
-              <p class="about__paragraph">Каждый день мы стараемся создавать
-                для вас самую лучшую игровую атмосферу
-                и радовать Вас топовыми игровыми разработками
-                со всего мира.</p>
-            </div>
-          </div>
-          <blockquote class="blockquote">
-            <p class="blockquote__paragraph">GAME OVER &mdash;
-              это место
-              незабываемых
-              впечатлений</p>
-            <div class="blockquote__author">
-              <img class="blockquote__img" src="./images/boss.jpeg" alt="">
-              <p class="blockquote__author-paragraph">Аркадий Абакшин,
-                создатель игровой
-                индустрии GAME OVER</p>
-            </div>
-          </blockquote>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section comments" id="comments">
-      <div class="container container-comments">
-        <h2 class="section__title">Отзывы посетителей</h2>
-
-        <ul class="comments__list">
-          <li class="comments__item">
-            <article class="article" aria-label="Отзыв посетителя">
-              <figure class="article__figure">
-                <div class="article__img-box">
-                  <img class="article__img" src="./images/comments/maks.jpg" alt="Аватар посетителя зала">
-                </div>
-                <figcaption class="article__figcaption">Макс Самойлов</figcaption>
-              </figure>
-              <p class="comments__text">
-                Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба,
-                никогда
-                еще я не был в таком полном игровом погружении. Сервис на высоте!
-              </p>
-            </article>
-          </li>
-
-          <li class="comments__item">
-            <article class="article" aria-label="Отзыв посетителя">
-              <figure class="article__figure">
-                <div class="article__img-box">
-                  <img class="article__img" src="./images/comments/oksana.jpg" alt="Аватар посетителя зала">
-                </div>
-                <figcaption class="article__figcaption">Оксана Григорьева</figcaption>
-              </figure>
-              <p class="comments__text">
-                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
-                больше нет подобных заведений
-              </p>
-            </article>
-          </li>
-
-          <li class="comments__item">
-            <article class="article" aria-label="Отзыв посетителя">
-              <figure class="article__figure">
-                <div class="article__img-box">
-                  <img class="article__img" src="./images/comments/nikita.jpg" alt="Аватар посетителя зала">
-                </div>
-                <figcaption class="article__figcaption">Никита Ященко</figcaption>
-              </figure>
-              <p class="comments__text">
-                Немного подвисала игра в vr очках, а так все норм. Крутое оформление комнаты в стиле звездных войн,
-                попал в атмосферу космоса
-              </p>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-
-    <section class="section faq">
-      <div class="container">
-        <h2 class="section__title">Частые вопросы</h2>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <button type="button" class="faq__item-button faq__item-button_color_purple">Могут ли мне вернуть деньги за
-              бронь?
-              <svg class="faq__item-svg faq__item-svg_color_purple" width="46" height="46" viewbox="0 0 46 46"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="path1" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor" />
-                <path class="path2" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor" />
-                <circle cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2" />
-              </svg>
-            </button>
-          </li>
-          <li class="faq__item">
-            <button type="button" class="faq__item-button faq__item-button_color_white">Какая комната самая популярная?
-              <svg class="faq__item-svg faq__item-svg_color_white" fill="none" viewBox="0 0 46 46"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="path1" d="m22.831 14h0.678v20h-0.678v-20z" fill="currentColor" />
-                <path d="m13 24.17v-0.678h20v0.678h-20z" fill="currentColor" />
-                <circle cx="23" cy="23" r="22" stroke="#fff" stroke-width="2" />
-              </svg>
-            </button>
-          </li>
-          <li class="faq__item">
-            <button type="button" class="faq__item-button ">Как получить VIP карту?
-              <svg class="faq__item-svg faq__item-svg_color_purple" width="46" height="46" viewbox="0 0 46 46"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="path1" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor" />
-                <path class="path2" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor" />
-                <circle cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2" />
-              </svg>
-            </button>
-          </li>
-          <li class="faq__item">
-            <button type="button" class="faq__item-button  faq__item-button_color_white">Можно ли забронировать комнату
-              онлайн?
-              <svg class="faq__item-svg faq__item-svg_color_white" fill="none" viewBox="0 0 46 46"
-                xmlns="http://www.w3.org/2000/svg">
-                <path class="path1" d="m22.831 14h0.678v20h-0.678v-20z" fill="currentColor" />
-                <path d="m13 24.17v-0.678h20v0.678h-20z" fill="currentColor" />
-                <circle cx="23" cy="23" r="22" stroke="#fff" stroke-width="2" />
-              </svg>
-            </button>
-          </li>
-          <li class="faq__item">
-            <button type="button" class="faq__item-button ">Какая комната самая популярная?
-              <svg class="faq__item-svg faq__item-svg_color_purple" width="46" height="46" viewbox="0 0 46 46"
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="path1" d="M22.8306 14H23.5086V34H22.8306V14Z" fill="currentColor" />
-                <path class="path2" d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z" fill="currentColor" />
-                <circle cx="23.0001" cy="23" r="22" stroke="#440F51" stroke-width="2" />
-              </svg>
-            </button>
-          </li>
-
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer class="section footer">
+  <body>
     <div class="container">
-      <h2 class="section__title">контакты</h2>
-      <div class="contacts" id="contacts">
-        <div class="contacts__box">
-          <address class="address">
-            <p class="address__text address__text_location">г. Москва
-              ул. Аквамарина, 16
-            </p>
-            <a class="address__text address__text_phone link" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
-            <a class="address__text address__text_mail  link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
-          </address>
-          <nav class="footer__social">
-            <ul class="footer__social-list">
-
-              <li class="footer__social-item">
-                <a class="footer__social-link" target="_blank" href="https://vk.com/feed">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M24.9999 1C11.7449 1 0.999878 11.745 0.999878 25C0.999878 38.255 11.7449 49 24.9999 49C38.2549 49 48.9999 38.255 48.9999 25C48.9999 11.745 38.2549 1 24.9999 1ZM34.2299 28.0775C34.2299 28.0775 36.3524 30.1725 36.8749 31.145C36.8899 31.165 36.8974 31.185 36.9024 31.195C37.1149 31.5525 37.1649 31.83 37.0599 32.0375C36.8849 32.3825 36.2849 32.5525 36.0799 32.5675H32.3299C32.0699 32.5675 31.5249 32.5 30.8649 32.045C30.3574 31.69 29.8574 31.1075 29.3699 30.54C28.6424 29.695 28.0124 28.965 27.3774 28.965C27.2967 28.9649 27.2166 28.9775 27.1399 29.0025C26.6599 29.1575 26.0449 29.8425 26.0449 31.6675C26.0449 32.2375 25.5949 32.565 25.2774 32.565H23.5599C22.9749 32.565 19.9274 32.36 17.2274 29.5125C13.9224 26.025 10.9474 19.03 10.9224 18.965C10.7349 18.5125 11.1224 18.27 11.5449 18.27H15.3324C15.8374 18.27 16.0024 18.5775 16.1174 18.85C16.2524 19.1675 16.7474 20.43 17.5599 21.85C18.8774 24.165 19.6849 25.105 20.3324 25.105C20.4538 25.1036 20.573 25.0727 20.6799 25.015C21.5249 24.545 21.3674 21.5325 21.3299 20.9075C21.3299 20.79 21.3274 19.56 20.8949 18.97C20.5849 18.5425 20.0574 18.38 19.7374 18.32C19.8669 18.1413 20.0375 17.9964 20.2349 17.8975C20.8149 17.6075 21.8599 17.565 22.8974 17.565H23.4749C24.5999 17.58 24.8899 17.6525 25.2974 17.755C26.1224 17.9525 26.1399 18.485 26.0674 20.3075C26.0449 20.825 26.0224 21.41 26.0224 22.1C26.0224 22.25 26.0149 22.41 26.0149 22.58C25.9899 23.5075 25.9599 24.56 26.6149 24.9925C26.7003 25.0461 26.799 25.0746 26.8999 25.075C27.1274 25.075 27.8124 25.075 29.6674 21.8925C30.2395 20.8681 30.7366 19.8037 31.1549 18.7075C31.1924 18.6425 31.3024 18.4425 31.4324 18.365C31.5283 18.3161 31.6347 18.2912 31.7424 18.2925H36.1949C36.6799 18.2925 37.0124 18.365 37.0749 18.5525C37.1849 18.85 37.0549 19.7575 35.0224 22.51L34.1149 23.7075C32.2724 26.1225 32.2724 26.245 34.2299 28.0775Z" />
-                  </svg>
-                </a>
-              </li>
-
-              <li class="footer__social-item">
-                <a class="footer__social-link" target="_blank" href="https://web.telegram.org/k/">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_2212_5)">
-                      <path
-                        d="M47.9999 24C47.9999 30.3652 45.4713 36.4697 40.9704 40.9706C36.4696 45.4714 30.3651 48 23.9999 48C17.6347 48 11.5302 45.4714 7.02932 40.9706C2.52844 36.4697 -0.00012207 30.3652 -0.00012207 24C-0.00012207 17.6348 2.52844 11.5303 7.02932 7.02944C11.5302 2.52856 17.6347 0 23.9999 0C30.3651 0 36.4696 2.52856 40.9704 7.02944C45.4713 11.5303 47.9999 17.6348 47.9999 24ZM24.8609 17.718C22.5269 18.69 17.8589 20.7 10.8629 23.748C9.72888 24.198 9.13188 24.642 9.07788 25.074C8.98788 25.803 9.90288 26.091 11.1479 26.484L11.6729 26.649C12.8969 27.048 14.5469 27.513 15.4019 27.531C16.1819 27.549 17.0489 27.231 18.0059 26.571C24.5429 22.158 27.9179 19.929 28.1279 19.881C28.2779 19.845 28.4879 19.803 28.6259 19.929C28.7669 20.052 28.7519 20.289 28.7369 20.352C28.6469 20.739 25.0559 24.075 23.1989 25.803C22.6199 26.343 22.2089 26.724 22.1249 26.811C21.9399 27 21.7519 27.1861 21.5609 27.369C20.4209 28.467 19.5689 29.289 21.6059 30.633C22.5869 31.281 23.3729 31.812 24.1559 32.346C25.0079 32.928 25.8599 33.507 26.9639 34.233C27.2429 34.413 27.5129 34.608 27.7739 34.794C28.7669 35.502 29.6639 36.138 30.7649 36.036C31.4069 35.976 32.0699 35.376 32.4059 33.576C33.2009 29.325 34.7639 20.118 35.1239 16.323C35.1458 16.0075 35.1328 15.6906 35.0849 15.378C35.0566 15.1258 34.9346 14.8934 34.7429 14.727C34.4699 14.5386 34.1445 14.4409 33.8129 14.448C32.9129 14.463 31.5239 14.946 24.8609 17.718Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2212_5">
-                        <rect width="50" height="50" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                </a>
-              </li>
-
-              <li class="footer__social-item">
-                <a class="footer__social-link" target="_blank" href="https://ru.pinterest.com/">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_2212_8)">
-                      <path
-                        d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562 44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383 18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1338 35.5481 27.7498 35.5481C32.4864 35.5481 35.6761 29.4647 35.6761 22.2558C35.6761 16.7782 31.9864 12.6769 25.2742 12.6769C17.6902 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7857 33.8109 13.2127 33.5776C9.71972 32.1513 8.0928 28.3263 8.0928 24.0263C8.0928 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.2979 39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011 50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2212_8">
-                        <rect width="50" height="50" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="footer__social-item">
-                <a class="footer__social-link" target="_blank" href="http://www.stumbleupon.com/">
-                  <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_2212_10)">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576 2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_2212_10">
-                        <rect width="50" height="50" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <img class="footer__map" src="./images/map.jpg" alt="">
-      </div>
-      <div class="copyright">
-        <p class="copyright__text">© Game Over, 2022</p>
-        <p class="copyright__text">Design by Anastasia Ilina
-          <a class="copyright__mail" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
-
-        </p>
-      </div>
+      <header class="header">
+        <button type="button" class="menu-burger">
+          <img class="menu-burger" src="./images/icon/menu-burger.svg" alt="" />
+        </button>
+        <a class="header__logo" href="!#">
+          <img class="header__img" src="images/favicon/logo.svg" alt="" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#halls">залы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#about">О нас</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#booking">Бронь</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#comments">отзывы</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header__button">Заказать звонок</button>
+      </header>
     </div>
-  </footer>
-  <script>
-    document.addEventListener('click', event => { if (event.target.matches('button')) { event.target.focus() } })
-  </script>
-</body>
 
+    <main>
+      <section class="section prev">
+        <div class="container prev__container">
+          <img class="prev__img" src="./images/hall/prev.png" alt="" />
+          <a class="prev__arrow-link" href="#price-list">
+            <svg
+              width="97"
+              height="97"
+              viewBox="0 0 97 97"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="48.5" cy="48.5" r="48" stroke="white" />
+              <rect
+                x="34.4255"
+                y="43.9162"
+                width="1.82001"
+                height="20.0201"
+                transform="rotate(-44.9975 34.4255 43.9162)"
+                fill="currentColor"
+              />
+              <rect
+                x="48.5807"
+                y="58.0737"
+                width="1.82001"
+                height="20.0201"
+                transform="rotate(-134.997 48.5807 58.0737)"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <h1 class="prev__title">game over</h1>
+          <p class="prev__subtitle">Новый формат игр и отдыха</p>
+          <div class="prev-info">
+            <div class="prev-info__item">
+              <p class="prev-info__title prev-info__title_type_numeric">4</p>
+              <p class="prev-info__text">Тематических зала</p>
+            </div>
+            <div class="prev-info__item">
+              <p class="prev-info__title prev-info__title_type_text">new</p>
+              <p class="prev-info__text">Новейшая аппаратура</p>
+            </div>
+          </div>
+          <a class="button button_color_violet" href="#booking"
+            >Забронировать</a
+          >
+        </div>
+      </section>
+
+      <section class="section price-list" id="price-list">
+        <div class="container">
+          <h2 class="section__title">
+            У нас есть все для классного отдыха с друзьями!
+          </h2>
+          <ul class="price-list__list">
+            <li class="price-list__item price-list__item_bg_vr">VR очки</li>
+            <li class="price-list__item price-list__item_bg_audio">
+              Аудио-система 5.1 с отличным звуком
+            </li>
+            <li class="price-list__item price-list__item_bg_karaoke">
+              Караоке (4 микрофона)
+            </li>
+            <li class="price-list__item price-list__item_bg_game">
+              Настольные игры
+            </li>
+            <li class="price-list__item price-list__item_bg_films">
+              Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
+            </li>
+            <li class="price-list__item price-list__item_bg_playStation">
+              PlayStation 5
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section halls" id="halls">
+        <div class="container">
+          <h2 class="section__title">наши залы</h2>
+          <ul class="halls__list">
+            <li class="halls__item halls__item_theme_vibes">
+              <a class="halls__link" href="vibes.html" target="_blank"
+                >80’s vibes</a
+              >
+            </li>
+            <li class="halls__item halls__item_theme_starwars">
+              <a class="halls__link" href="starwars.html" target="_blank"
+                >Star wars</a
+              >
+            </li>
+            <li class="halls__item halls__item_theme_wildwest">
+              <a class="halls__link" href="wildwest.html" target="_blank"
+                >Wild west</a
+              >
+            </li>
+            <li class="halls__item halls__item_theme_neon">
+              <a class="halls__link" href="neon.html" target="_blank"
+                >Neon style</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section booking" id="booking">
+        <div class="container">
+          <h2 class="section__title">Забронировать зал просто</h2>
+          <p class="booking__text">Выбери зал</p>
+          <form
+            class="booking__form"
+            action="https://jsonplaceholder.typicode.com/posts"
+            method="POST"
+            name="booking"
+          >
+            <fieldset class="booking__fieldset">
+              <label class="booking__label">80's vibes</label>
+              <input
+                class="booking__radio"
+                type="radio"
+                name="hall"
+                value="80-vibes"
+              />
+
+              <label class="booking__label">star wars</label>
+              <input
+                class="booking__radio"
+                type="radio"
+                name="hall"
+                value="star-wars"
+              />
+
+              <label class="booking__label">wild west</label>
+              <input
+                class="booking__radio"
+                type="radio"
+                name="hall"
+                value="wild-west"
+              />
+
+              <label class="booking__label">neon style</label>
+              <input
+                class="booking__radio"
+                type="radio"
+                name="hall"
+                value="neon-style"
+              />
+            </fieldset>
+
+            <div class="booking-container">
+              <fieldset class="entertainment">
+                <legend class="booking__legend">
+                  Собери набор развлечений
+                </legend>
+                <fieldset class="entertainment__fieldset">
+                  <legend class="entertainment__legend">Приставка:</legend>
+                  <label
+                    class="entertainment__label entertainment__label_type_radio"
+                  >
+                    <input
+                      class="entertainment__checkbox entertainment__checkbox_type_radio"
+                      type="radio"
+                      name="console"
+                      value="play-Station"
+                    />Play Station
+                  </label>
+                  <label
+                    class="entertainment__label entertainment__label_type_radio"
+                  >
+                    <input
+                      class="entertainment__checkbox entertainment__checkbox_type_radio"
+                      type="radio"
+                      name="console"
+                      value="sega-Mega"
+                    />Sega Mega Drive
+                  </label>
+                  <label
+                    class="entertainment__label entertainment__label_type_radio"
+                  >
+                    <input
+                      class="entertainment__checkbox entertainment__checkbox_type_radio"
+                      type="radio"
+                      name="console"
+                      value="x-box"
+                    />X-box One S
+                  </label>
+                  <label
+                    class="entertainment__label entertainment__label_type_radio"
+                  >
+                    <input
+                      class="entertainment__checkbox entertainment__checkbox_type_radio"
+                      type="radio"
+                      name="console"
+                      value="dendy"
+                    />Dendy
+                  </label>
+                </fieldset>
+
+                <fieldset class="entertainment__fieldset">
+                  <legend class="entertainment__legend">
+                    Настольные игры:
+                  </legend>
+                  <label class="entertainment__label">
+                    <input
+                      class="entertainment__checkbox"
+                      type="checkbox"
+                      name="game"
+                      value="jenga"
+                    />Jenga
+                  </label>
+
+                  <label class="entertainment__label">
+                    <input
+                      class="entertainment__checkbox"
+                      type="checkbox"
+                      name="game"
+                      value="monopoly"
+                    />Monopoly
+                  </label>
+
+                  <label class="entertainment__label">
+                    <input
+                      class="entertainment__checkbox"
+                      type="checkbox"
+                      name="game"
+                      value="munchkin"
+                    />Манчкин
+                  </label>
+
+                  <label class="entertainment__label">
+                    <input
+                      class="entertainment__checkbox"
+                      type="checkbox"
+                      name="game"
+                      value="alias"
+                    />Alias
+                  </label>
+                </fieldset>
+
+                <fieldset class="entertainment__fieldset">
+                  <legend class="entertainment__legend">Дополнительно:</legend>
+                  <label class="entertainment__label">
+                    <input
+                      class="entertainment__checkbox"
+                      type="checkbox"
+                      name="additionally"
+                      value="Karaoke"
+                    />Караоке
+                  </label>
+
+                  <label class="entertainment__label">
+                    <input
+                      class="entertainment__checkbox"
+                      type="checkbox"
+                      name="additionally"
+                      value="VR"
+                    />VR
+                  </label>
+                </fieldset>
+              </fieldset>
+              <fieldset class="info">
+                <legend class="booking__legend">Выбери дату и время</legend>
+
+                <div class="info__box">
+                  <div class="info__fieldset">
+                    <div class="info__date">
+                      <input
+                        class="info__date-input"
+                        type="text"
+                        placeholder="Дата"
+                        onfocus="(this.type='date')"
+                        id="date"
+                        required
+                      />
+                      <label class="info__date-label" for="date"></label>
+
+                      <label class="info__date-label"></label>
+                      <input
+                        class="info__date-input"
+                        type="text"
+                        placeholder="Время"
+                        onfocus="(this.type='time')"
+                        required
+                      />
+                    </div>
+                    <div class="persons">
+                      <!-- <label class="info__label info__label-persons" for="persons"></label> -->
+                      <input
+                        class="info__input"
+                        type="text"
+                        name="persons"
+                        id="persons"
+                        placeholder="Сколько человек"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="info-name">
+                    <div class="info-name__firstname">
+                      <label
+                        class="info__label info__label-name"
+                        for="firstname"
+                        >Имя</label
+                      >
+                      <input
+                        class="info__input"
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        required
+                      />
+                    </div>
+
+                    <div class="info-name__surname">
+                      <label
+                        class="info__label info__label-surname"
+                        for="surname"
+                        >Фамилия</label
+                      >
+                      <input
+                        class="info__input"
+                        type="text"
+                        name="surname"
+                        id="surname"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="contact">
+                    <div class="contact-phone">
+                      <label class="info__label info__label-phone" for="phone"
+                        >Телефон</label
+                      >
+                      <input
+                        class="info__input"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        required
+                        placeholder="+7-___-___-__-__"
+                        pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                      />
+                    </div>
+
+                    <div class="contact-mail">
+                      <label class="info__label info__label-mail" for="mail"
+                        >E-mail</label
+                      >
+                      <input
+                        class="info__input"
+                        type="email"
+                        name="mail"
+                        id="mail"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <button class="button button_color_white" type="submit">
+                Забронировать
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <h2 class="section__title about__title">О нас</h2>
+          <div class="about__content">
+            <img
+              class="about__img"
+              src="./images/about-img.jpg"
+              alt="изображение залов"
+            />
+            <div class="about__content-text">
+              <div class="about__text">
+                <p class="about__paragraph">
+                  Для наших гостей мы создали концептуально новое игровое
+                  пространство выртуальной реальности в центральной части города
+                </p>
+                <p class="about__paragraph">
+                  Каждый день мы стараемся создавать для вас самую лучшую
+                  игровую атмосферу и радовать Вас топовыми игровыми
+                  разработками со всего мира.
+                </p>
+              </div>
+            </div>
+            <blockquote class="blockquote">
+              <p class="blockquote__paragraph">
+                GAME OVER &mdash; это место незабываемых впечатлений
+              </p>
+              <div class="blockquote__author">
+                <img class="blockquote__img" src="./images/boss.jpeg" alt="" />
+                <p class="blockquote__author-paragraph">
+                  Аркадий Абакшин, создатель игровой индустрии GAME OVER
+                </p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section comments" id="comments">
+        <div class="container container-comments">
+          <h2 class="section__title">Отзывы посетителей</h2>
+
+          <ul class="comments__list">
+            <li class="comments__item">
+              <article class="article" aria-label="Отзыв посетителя">
+                <figure class="article__figure">
+                  <div class="article__img-box">
+                    <img
+                      class="article__img"
+                      src="./images/comments/maks.jpg"
+                      alt="Аватар посетителя зала"
+                    />
+                  </div>
+                  <figcaption class="article__figcaption">
+                    Макс Самойлов
+                  </figcaption>
+                </figure>
+                <p class="comments__text">
+                  Отмечали здесь день рождения с компанией друзей, все было
+                  очень круто! VR очки это просто бомба, никогда еще я не был в
+                  таком полном игровом погружении. Сервис на высоте!
+                </p>
+              </article>
+            </li>
+
+            <li class="comments__item">
+              <article class="article" aria-label="Отзыв посетителя">
+                <figure class="article__figure">
+                  <div class="article__img-box">
+                    <img
+                      class="article__img"
+                      src="./images/comments/oksana.jpg"
+                      alt="Аватар посетителя зала"
+                    />
+                  </div>
+                  <figcaption class="article__figcaption">
+                    Оксана Григорьева
+                  </figcaption>
+                </figure>
+                <p class="comments__text">
+                  Были в комнате Дикий Запад, пели в караоке под Шакиру,
+                  отличный получился корпоратив! У нас в городе больше нет
+                  подобных заведений
+                </p>
+              </article>
+            </li>
+
+            <li class="comments__item">
+              <article class="article" aria-label="Отзыв посетителя">
+                <figure class="article__figure">
+                  <div class="article__img-box">
+                    <img
+                      class="article__img"
+                      src="./images/comments/nikita.jpg"
+                      alt="Аватар посетителя зала"
+                    />
+                  </div>
+                  <figcaption class="article__figcaption">
+                    Никита Ященко
+                  </figcaption>
+                </figure>
+                <p class="comments__text">
+                  Немного подвисала игра в vr очках, а так все норм. Крутое
+                  оформление комнаты в стиле звездных войн, попал в атмосферу
+                  космоса
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <div class="container">
+          <h2 class="section__title">Частые вопросы</h2>
+          <ul class="faq__list">
+            <li class="faq__item">
+              <button
+                type="button"
+                class="faq__item-button faq__item-button_color_purple"
+              >
+                Могут ли мне вернуть деньги за бронь?
+                <svg
+                  class="faq__item-svg faq__item-svg_color_purple"
+                  width="46"
+                  height="46"
+                  viewbox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="path1"
+                    d="M22.8306 14H23.5086V34H22.8306V14Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="path2"
+                    d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="23.0001"
+                    cy="23"
+                    r="22"
+                    stroke="#440F51"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div class="item__text-wrapper">
+                <p class="item__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus placeat libero in et, maiores quam reiciendis,
+                  soluta nobis voluptatem enim recusandae repudiandae earum
+                  tempora quia quos asperiores eaque dicta assumenda! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                  placeat libero in et, maiores quam reiciendis, soluta nobis
+                  voluptatem enim recusandae repudiandae earum tempora quia quos
+                  asperiores eaque dicta assumenda!
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button
+                type="button"
+                class="faq__item-button faq__item-button_color_white"
+              >
+                Какая комната самая популярная?
+                <svg
+                  class="faq__item-svg faq__item-svg_color_white"
+                  fill="none"
+                  viewBox="0 0 46 46"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="path1"
+                    d="m22.831 14h0.678v20h-0.678v-20z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="m13 24.17v-0.678h20v0.678h-20z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="23"
+                    cy="23"
+                    r="22"
+                    stroke="#fff"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div class="item__text-wrapper">
+                <p class="item__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus placeat libero in et, maiores quam reiciendis,
+                  soluta nobis voluptatem enim recusandae repudiandae earum
+                  tempora quia quos asperiores eaque dicta assumenda! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                  placeat libero in et, maiores quam reiciendis, soluta nobis
+                  voluptatem enim recusandae repudiandae earum tempora quia quos
+                  asperiores eaque dicta assumenda!
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button type="button" class="faq__item-button">
+                Как получить VIP карту?
+                <svg
+                  class="faq__item-svg faq__item-svg_color_purple"
+                  width="46"
+                  height="46"
+                  viewbox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="path1"
+                    d="M22.8306 14H23.5086V34H22.8306V14Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="path2"
+                    d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="23.0001"
+                    cy="23"
+                    r="22"
+                    stroke="#440F51"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div class="item__text-wrapper">
+                <p class="item__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus placeat libero in et, maiores quam reiciendis,
+                  soluta nobis voluptatem enim recusandae repudiandae earum
+                  tempora quia quos asperiores eaque dicta assumenda! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                  placeat libero in et, maiores quam reiciendis, soluta nobis
+                  voluptatem enim recusandae repudiandae earum tempora quia quos
+                  asperiores eaque dicta assumenda! placeat libero in et,
+                  maiores quam reiciendis, soluta nobis voluptatem enim
+                  recusandae repudiandae earum tempora quia quos asperiores
+                  eaque dicta assumenda!
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button
+                type="button"
+                class="faq__item-button faq__item-button_color_white"
+              >
+                Можно ли забронировать комнату онлайн?
+                <svg
+                  class="faq__item-svg faq__item-svg_color_white"
+                  fill="none"
+                  viewBox="0 0 46 46"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="path1"
+                    d="m22.831 14h0.678v20h-0.678v-20z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="m13 24.17v-0.678h20v0.678h-20z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="23"
+                    cy="23"
+                    r="22"
+                    stroke="#fff"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div class="item__text-wrapper">
+                <p class="item__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus placeat libero in et, maiores quam reiciendis,
+                  soluta nobis voluptatem enim recusandae repudiandae earum
+                  tempora quia quos asperiores eaque dicta assumenda! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                  placeat libero in et, maiores quam reiciendis, soluta nobis
+                  voluptatem enim recusandae repudiandae earum tempora quia quos
+                  asperiores eaque dicta assumenda!
+                </p>
+              </div>
+            </li>
+            <li class="faq__item">
+              <button type="button" class="faq__item-button">
+                Какая комната самая популярная?
+                <svg
+                  class="faq__item-svg faq__item-svg_color_purple"
+                  width="46"
+                  height="46"
+                  viewbox="0 0 46 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="path1"
+                    d="M22.8306 14H23.5086V34H22.8306V14Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    class="path2"
+                    d="M13.0001 24.1695V23.4915H33.0001V24.1695H13.0001Z"
+                    fill="currentColor"
+                  />
+                  <circle
+                    cx="23.0001"
+                    cy="23"
+                    r="22"
+                    stroke="#440F51"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <div class="item__text-wrapper">
+                <p class="item__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus placeat libero in et, maiores quam reiciendis,
+                  soluta nobis voluptatem enim recusandae repudiandae earum
+                  tempora quia quos asperiores eaque dicta assumenda! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                  placeat libero in et, maiores quam reiciendis, soluta nobis
+                  voluptatem enim recusandae repudiandae earum tempora quia quos
+                  asperiores eaque dicta assumenda!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="section footer">
+      <div class="container">
+        <h2 class="section__title">контакты</h2>
+        <div class="contacts" id="contacts">
+          <div class="contacts__box">
+            <address class="address">
+              <p class="address__text address__text_location">
+                г. Москва ул. Аквамарина, 16
+              </p>
+              <a
+                class="address__text address__text_phone link"
+                href="tel:89509302893"
+                >8 (950) 930 - 28 - 93</a
+              >
+              <a
+                class="address__text address__text_mail link"
+                href="mailto:gameover@gmail.com"
+                >GameOver@gmail.com</a
+              >
+            </address>
+            <nav class="footer__social">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    target="_blank"
+                    href="https://vk.com/feed"
+                  >
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M24.9999 1C11.7449 1 0.999878 11.745 0.999878 25C0.999878 38.255 11.7449 49 24.9999 49C38.2549 49 48.9999 38.255 48.9999 25C48.9999 11.745 38.2549 1 24.9999 1ZM34.2299 28.0775C34.2299 28.0775 36.3524 30.1725 36.8749 31.145C36.8899 31.165 36.8974 31.185 36.9024 31.195C37.1149 31.5525 37.1649 31.83 37.0599 32.0375C36.8849 32.3825 36.2849 32.5525 36.0799 32.5675H32.3299C32.0699 32.5675 31.5249 32.5 30.8649 32.045C30.3574 31.69 29.8574 31.1075 29.3699 30.54C28.6424 29.695 28.0124 28.965 27.3774 28.965C27.2967 28.9649 27.2166 28.9775 27.1399 29.0025C26.6599 29.1575 26.0449 29.8425 26.0449 31.6675C26.0449 32.2375 25.5949 32.565 25.2774 32.565H23.5599C22.9749 32.565 19.9274 32.36 17.2274 29.5125C13.9224 26.025 10.9474 19.03 10.9224 18.965C10.7349 18.5125 11.1224 18.27 11.5449 18.27H15.3324C15.8374 18.27 16.0024 18.5775 16.1174 18.85C16.2524 19.1675 16.7474 20.43 17.5599 21.85C18.8774 24.165 19.6849 25.105 20.3324 25.105C20.4538 25.1036 20.573 25.0727 20.6799 25.015C21.5249 24.545 21.3674 21.5325 21.3299 20.9075C21.3299 20.79 21.3274 19.56 20.8949 18.97C20.5849 18.5425 20.0574 18.38 19.7374 18.32C19.8669 18.1413 20.0375 17.9964 20.2349 17.8975C20.8149 17.6075 21.8599 17.565 22.8974 17.565H23.4749C24.5999 17.58 24.8899 17.6525 25.2974 17.755C26.1224 17.9525 26.1399 18.485 26.0674 20.3075C26.0449 20.825 26.0224 21.41 26.0224 22.1C26.0224 22.25 26.0149 22.41 26.0149 22.58C25.9899 23.5075 25.9599 24.56 26.6149 24.9925C26.7003 25.0461 26.799 25.0746 26.8999 25.075C27.1274 25.075 27.8124 25.075 29.6674 21.8925C30.2395 20.8681 30.7366 19.8037 31.1549 18.7075C31.1924 18.6425 31.3024 18.4425 31.4324 18.365C31.5283 18.3161 31.6347 18.2912 31.7424 18.2925H36.1949C36.6799 18.2925 37.0124 18.365 37.0749 18.5525C37.1849 18.85 37.0549 19.7575 35.0224 22.51L34.1149 23.7075C32.2724 26.1225 32.2724 26.245 34.2299 28.0775Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    target="_blank"
+                    href="https://web.telegram.org/k/"
+                  >
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2212_5)">
+                        <path
+                          d="M47.9999 24C47.9999 30.3652 45.4713 36.4697 40.9704 40.9706C36.4696 45.4714 30.3651 48 23.9999 48C17.6347 48 11.5302 45.4714 7.02932 40.9706C2.52844 36.4697 -0.00012207 30.3652 -0.00012207 24C-0.00012207 17.6348 2.52844 11.5303 7.02932 7.02944C11.5302 2.52856 17.6347 0 23.9999 0C30.3651 0 36.4696 2.52856 40.9704 7.02944C45.4713 11.5303 47.9999 17.6348 47.9999 24ZM24.8609 17.718C22.5269 18.69 17.8589 20.7 10.8629 23.748C9.72888 24.198 9.13188 24.642 9.07788 25.074C8.98788 25.803 9.90288 26.091 11.1479 26.484L11.6729 26.649C12.8969 27.048 14.5469 27.513 15.4019 27.531C16.1819 27.549 17.0489 27.231 18.0059 26.571C24.5429 22.158 27.9179 19.929 28.1279 19.881C28.2779 19.845 28.4879 19.803 28.6259 19.929C28.7669 20.052 28.7519 20.289 28.7369 20.352C28.6469 20.739 25.0559 24.075 23.1989 25.803C22.6199 26.343 22.2089 26.724 22.1249 26.811C21.9399 27 21.7519 27.1861 21.5609 27.369C20.4209 28.467 19.5689 29.289 21.6059 30.633C22.5869 31.281 23.3729 31.812 24.1559 32.346C25.0079 32.928 25.8599 33.507 26.9639 34.233C27.2429 34.413 27.5129 34.608 27.7739 34.794C28.7669 35.502 29.6639 36.138 30.7649 36.036C31.4069 35.976 32.0699 35.376 32.4059 33.576C33.2009 29.325 34.7639 20.118 35.1239 16.323C35.1458 16.0075 35.1328 15.6906 35.0849 15.378C35.0566 15.1258 34.9346 14.8934 34.7429 14.727C34.4699 14.5386 34.1445 14.4409 33.8129 14.448C32.9129 14.463 31.5239 14.946 24.8609 17.718Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2212_5">
+                          <rect width="50" height="50" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    target="_blank"
+                    href="https://ru.pinterest.com/"
+                  >
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2212_8)">
+                        <path
+                          d="M25.0005 0C11.1947 0 -0.000152588 11.1936 -0.000152588 25.0006C-0.000152588 35.2378 6.15562 44.0314 14.9646 47.8981C14.8941 46.1526 14.9511 44.0558 15.3998 42.159C15.8806 40.1282 18.6165 28.5359 18.6165 28.5359C18.6165 28.5359 17.8178 26.9397 17.8178 24.5808C17.8178 20.8763 19.9652 18.1077 22.6383 18.1077C24.912 18.1077 26.0107 19.8154 26.0107 21.8609C26.0107 24.1468 24.5537 27.5635 23.8037 30.7327C23.1768 33.3859 25.1338 35.5481 27.7498 35.5481C32.4864 35.5481 35.6761 29.4647 35.6761 22.2558C35.6761 16.7782 31.9864 12.6769 25.2742 12.6769C17.6902 12.6769 12.9659 18.3321 12.9659 24.6487C12.9659 26.8282 13.6082 28.3635 14.6146 29.5513C15.0768 30.0981 15.1409 30.318 14.9736 30.9462C14.8537 31.4058 14.5781 32.5128 14.4646 32.9519C14.2986 33.5853 13.7857 33.8109 13.2127 33.5776C9.71972 32.1513 8.0928 28.3263 8.0928 24.0263C8.0928 16.9237 14.0819 8.40898 25.9601 8.40898C35.5056 8.40898 41.7877 15.316 41.7877 22.732C41.7877 32.5378 36.3351 39.8647 28.2979 39.8647C25.5998 39.8647 23.0607 38.4051 22.1909 36.7487C22.1909 36.7487 20.7396 42.5077 20.4325 43.6218C19.9024 45.5494 18.8646 47.4763 17.9159 48.9769C20.2162 49.6571 22.6024 50.0025 25.0011 50.0026C38.8063 50.0013 49.9998 38.8071 49.9998 25.0006C49.9998 11.1936 38.8063 0 25.0005 0Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2212_8">
+                          <rect width="50" height="50" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__social-item">
+                  <a
+                    class="footer__social-link"
+                    target="_blank"
+                    href="http://www.stumbleupon.com/"
+                  >
+                    <svg
+                      width="50"
+                      height="50"
+                      viewBox="0 0 50 50"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_2212_10)">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576 2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2212_10">
+                          <rect width="50" height="50" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <img class="footer__map" src="./images/map.jpg" alt="" />
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">© Game Over, 2022</p>
+          <p class="copyright__text">
+            Design by Anastasia Ilina
+            <a class="copyright__mail" href="mailto:ilina9825@gmail.com"
+              >ilina9825@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
