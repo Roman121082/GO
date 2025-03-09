@@ -10,6 +10,7 @@
 @import "comments.css";
 @import "faq.css";
 @import "footer.css";
+@import "menu.css";
 @import "copyright.css";
 
 * {
@@ -106,7 +107,6 @@ input {
   outline: none;
 }
 
-
 /*
 Пример контейнера
 
@@ -115,7 +115,6 @@ input {
 в итоге 1240px
 Чтобы контент не прижимался к краям экрана
 */
-
 
 .section__title {
   margin: 0 0 40px 0;
@@ -146,20 +145,19 @@ input {
 }
 
 .button_color_violet:hover {
-  background-color: #840AA3;
+  background-color: #840aa3;
 }
 
 .button_color_violet:focus {
-  background-color: #840AA3;
+  background-color: #840aa3;
 }
 
 .button_color_violet:active {
-  background-color: #640AA3;
+  background-color: #640aa3;
 }
 
-
 .button_color_white:hover {
-  background-color: #EADEED;
+  background-color: #eadeed;
   border: 3px solid var(--hover-color);
   transition: all 0.3s ease-in;
 }
@@ -172,7 +170,7 @@ input {
 }
 
 .button_color_white:active {
-  background-color: #EADEED;
+  background-color: #eadeed;
   border: 3px solid var(--background-color);
   transition: all 0.3s ease-in;
 }
@@ -181,15 +179,12 @@ input {
   padding-bottom: 10px;
 }
 
-
-
-@media(max-width: 1250px) {
+@media (max-width: 1250px) {
   .button_color_violet {
     padding: 17px 48px;
     font-size: 22px;
     line-height: 30px;
   }
-
 
   .section__title {
     margin: 0 0 36px 0;
@@ -197,13 +192,12 @@ input {
     line-height: 40px;
   }
 
-
   .section {
     padding: 35px 0;
   }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .button_color_violet {
     padding: 11px 34px;
     font-size: 16px;
@@ -216,13 +210,12 @@ input {
     line-height: 36px;
   }
 
-
   .section {
     padding: 30px 0;
   }
 }
 
-@media(max-width: 560px) {
+@media (max-width: 560px) {
   .button_color_violet {
     padding: 8px 13px;
     font-size: 10px;
@@ -233,11 +226,9 @@ input {
     padding: 15px 0;
   }
 
-
   .section__title {
     margin: 0 0 15px 0;
     font-size: 14px;
     line-height: 18px;
   }
-
 }

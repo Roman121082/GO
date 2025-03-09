@@ -1,0 +1,32 @@
+.mobile-menu {
+  display: inline-block;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  transform: translateY(-150%);
+  opacity: 0;
+  padding: 60px 0;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  background-color: #2e2e2e;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.mobile-menu--active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+}
